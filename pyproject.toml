@@ -6,7 +6,7 @@ authors = ["datadavev <605409+datadavev@users.noreply.github.com>"]
 license = "Apache 2.0"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.7"
 requests = "^2.25.1"
 click = "^7.1.2"
 dateparser = "^1.0.0"
