@@ -5,16 +5,12 @@ import datetime
 import json
 import asyncio
 import concurrent.futures
-import functools
-import signal
-import traceback
 import urllib.parse
 import urllib3
 import requests
 import dateparser
 import xmltodict
 
-# multiprocessing.log_to_stderr()
 
 STATUS_THREADS = 8
 
@@ -62,27 +58,6 @@ def escapeSolrQueryTerm(term):
     for c in SOLR_RESERVED_CHAR_LIST:
         term = term.replace(c, "\{}".format(c))
     return term
-
-
-def configureLogging():
-    root = logging.getLogger()
-    console_handler = logging.StreamHandler()
-    formatter = logging.Formatter(
-        "%(asctime)s %(processName)-10s %(name)s %(levelname)-8s %(message)s"
-    )
-    console_handler.setFormatter(formatter)
-    root.addHandler(console_handler)
-    root.setLevel(logging.DEBUG)
-
-
-def loggingListenerProcess(queue):
-    configureLogging()
-    while True:
-        while not queue.empty():
-            record = queue.get()
-            logger = logging.getLogger(record.name)
-            logger.handle(record)
-        time.sleep(0.1)
 
 
 def dtToDataONETime(dt):
