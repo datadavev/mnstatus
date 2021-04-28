@@ -92,13 +92,6 @@ def main(ctx, verbosity, json_format, cnode_url, terminal_colors, solr_url):
 )
 @click.option("-F", "--full", "show_full", is_flag=True, help="Show full node records")
 @click.option(
-    "-S",
-    "--sort",
-    "sort_by",
-    default="UNSORTED",
-    type=click.Choice(["UNSORTED", "ID", "DATE"], case_sensitive=False),
-)
-@click.option(
     "-t",
     "--test",
     "tests",
@@ -114,7 +107,7 @@ def main(ctx, verbosity, json_format, cnode_url, terminal_colors, solr_url):
     help="HTTP connection timeout in seconds",
 )
 @click.pass_context
-def listNodes(ctx, n_type, n_state, show_full, sort_by, tests, timeout):
+def listNodes(ctx, n_type, n_state, show_full, tests, timeout):
     _L = mnstatus.getLogger()
     if not n_type is None:
         n_type = n_type.lower()
@@ -129,38 +122,15 @@ def listNodes(ctx, n_type, n_state, show_full, sort_by, tests, timeout):
     cn = mnstatus.NodeList(base_url=ctx.obj["cnode_url"])
     cn.filterNodeState(n_state)
     cn.filterNodeType(n_type)
-    if not sort_by == "UNSORTED":
-        if sort_by == "ID":
-            _nodes.sort(key=lambda x: x["identifier"])
-        if sort_by == "DATE":
-            _nodes.sort(
-                key=lambda x: x.get("synchronization", {}).get("lastHarvested", "")
-            )
     if len(tests) > 0:
         cn.testNodeConnectivity(tests,  solr_url=ctx.obj["solr_url"], timeout=timeout)
-        '''
-        targets = []
-        for n in cn.nodes():
-            targets.append(
-                cn.mnStatus(
-                    n["identifier"], solr_url=ctx.obj["solr_url"], timeout=timeout
-                )
-            )
-        result = mnstatus.testNodeConnectivity(targets, tests=tests)
-        for node_id in result:
-            _L.warning("NODE_ID = %s", node_id)
-            _L.warning("INFO = %s", str(result[node_id]))
-            res = cn.setStatusInfo(node_id, result[node_id])
-            _L.warning("SET = %s", res)
-        '''
     if ctx.obj.get("json_format", False):
         if show_full:
             print(mnstatus.jsonDumps(cn.nodes()))
         else:
             res = []
             for n in cn.nodes():
-                res.append(
-                    {
+                entry = {
                         "identifier": n["identifier"],
                         "baseURL": n["baseURL"],
                         "name": n["name"],
@@ -170,7 +140,28 @@ def listNodes(ctx, n_type, n_state, show_full, sort_by, tests, timeout):
                             "lastHarvested", ""
                         ),
                     }
-                )
+                if "status" in n.keys():
+                    if "ping" in n["status"]:
+                        entry["ping"] = {
+                            "status": n["status"]["ping"]["status"],
+                            "msg": n["status"]["ping"]["message"]
+                        }
+                    if "mn" in n["status"]:
+                        entry["mn"] = {
+                            "count": n["status"]["mn"]["count"],
+                            "latest": n["status"]["mn"]["latest"],
+                        }
+                    if "cn" in n["status"]:
+                        entry["cn"] = {
+                            "count": n["status"]["cn"]["count"],
+                            "latest": n["status"]["cn"]["latest"],
+                        }
+                    if "index" in n["status"]:
+                        entry["index"] = {
+                            "count": n["status"]["index"]["count"],
+                            "latest": n["status"]["index"]["latest"],
+                        }
+                res.append(entry)
             print(mnstatus.jsonDumps(res))
         return 0
     for n in cn.nodes():

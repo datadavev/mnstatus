@@ -256,7 +256,13 @@ class MNStatus(object):
             result["status"] = -2
             return result
         result["status"] = response.status_code
-        olist = xmltodict.parse(response.text, process_namespaces=True)
+        try:
+            olist = xmltodict.parse(response.text, process_namespaces=True)
+        except Exception as e:
+            _L.error("Failed to parse XML response from URL: %s", response.url)
+            _L.error(e)
+            result["status"] = -3
+            return result
         if response.status_code != 200:
             return result
         result["total"] = int(olist[DATAONE_OBJECT_LIST]["@total"])
