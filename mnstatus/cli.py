@@ -175,8 +175,9 @@ def listNodes(ctx, n_type, n_state, show_full, sort_by, tests, timeout):
         return 0
     for n in cn.nodes():
         lh = n.get("synchronization", {}).get("lastHarvested", "")
+        _ping = n.get("status",{}).get("ping",{}).get("status")
         print(
-            f"{n['identifier']:25} {n['@type']} {stateInt(n['@state'])} {n['baseURL']:55} {lh}"
+            f"{n['identifier']:25} {n['@type']} {stateInt(n['@state'])} {n['baseURL']:55} {lh} {_ping}"
         )
     return 0
 
@@ -208,22 +209,6 @@ def checkNode(ctx, node_id, timeout, tests):
     cn.testNodeConnectivity(tests, solr_url=ctx.obj["solr_url"], timeout=timeout, node_ids_to_test=[node_id,])
     mn = cn.node(node_id)
     print(mnstatus.jsonDumps(mn["status"]))
-    '''
-    mn = cn.mnStatus(node_id, solr_url=ctx.obj["solr_url"], timeout=timeout)
-    if mn is None:
-        _L.info("Using CN URL of %s", ctx.obj["cnode_url"])
-        _L.error("Unable to locate a node identified by: %s", node_id)
-        return 1
-    _L.info("testing...")
-    result = mnstatus.testNodeConnectivity(
-        [
-            mn,
-        ],
-        tests=tests,
-    )
-    _L.info("done...")
-    print(mnstatus.jsonDumps(result))
-    '''
     return 0
 
 
