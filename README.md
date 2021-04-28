@@ -58,6 +58,10 @@ Four tests are available:
 
 `index`: Get the number of records, the oldest and most recent System Metadata Modified date and Uploaded date as reported by the CN index.
 
+Counts and times are based on the DataONE listObjects response, which only includes 
+`dateModified`. Hence the entries in the status results are the earliest and latest dates 
+that system metadata was modified.
+
 Example:
 ```
 mnstatus node urn:node:KNB -t ping -t mn -t cn -t index
@@ -137,7 +141,7 @@ mnstatus --json nids -n mn -s up -t ping -t index  -t mn -t cn -F > test.json
 
 The resulting JSON file is pretty big, and is a JSON-ification of
 the XML node list with a `status` entry added to each node. That
-entry contain information similar to the output above for a single node.
+entry contains information similar to the output above for a single node.
 
 A summary can be generated using `jq` to extract values. For example with columns
 `node_id, ping_status, mn_count, cn_count, index_count`:
