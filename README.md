@@ -125,7 +125,6 @@ Options:
   -n, --n_type TEXT              Specify node type, mn or cn
   -s, --state TEXT               Specify node state, up or down
   -F, --full                     Show full node records
-  -S, --sort [UNSORTED|ID|DATE]
   -t, --test TEXT                Tests to run
   -T, --timeout FLOAT            HTTP connection timeout in seconds
   --help                         Show this message and exit.
@@ -140,8 +139,3 @@ The resulting JSON file is pretty big, and is a JSON-ification of
 the XML node list with a `status` entry added to each node. That
 entry contain information similar to the output above for a single node.
 
-## Known Issues
-
-- Terminal colors are not turned on
-- Sorting output from `nids` is broken
-- Only the `full` output format for `nids` includes the status information

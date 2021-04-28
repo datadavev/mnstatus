@@ -601,7 +601,6 @@ class NodeList(object):
         def runCheck(node, task):
             """returns (node_id, task, result)"""
             _L = getLogger()
-            _L.info("at _runCheck")
             res = None
             if task == "ping":
                 _L.info("Start Ping %s", node.node_id)
