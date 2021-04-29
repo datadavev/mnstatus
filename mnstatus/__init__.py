@@ -658,11 +658,11 @@ class NodeList(object):
 
             def _checkServerLoad(task):
                 _mn, _t = task
-                # Allow only one cn task at a time
+                # restrict number of concurrent CN tasks
                 if _t == "cn":
                     if active_task_names.count("cn") >= MAXIMUM_CN_TASKS:
                         return False
-                # Allow only three index tasks at a time
+                # retrict number of concurrent index tasks
                 elif _t == "index":
                     if active_task_names.count("index") >= MAXIMUM_INDEX_TASKS:
                         return False
