@@ -5,6 +5,7 @@ import datetime
 import json
 import asyncio
 import concurrent.futures
+import socket
 import urllib.parse
 import urllib3
 import requests
@@ -254,6 +255,9 @@ class MNStatus(object):
             return result
         except urllib3.exceptions.MaxRetryError as e:
             result["status"] = -2
+            return result
+        except socket.timeout as e:
+            result["status"] = -3
             return result
         result["status"] = response.status_code
         try:
