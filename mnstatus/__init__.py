@@ -256,8 +256,11 @@ class MNStatus(object):
         except urllib3.exceptions.MaxRetryError as e:
             result["status"] = -2
             return result
-        except socket.timeout as e:
+        except requests.exceptions.ReadTimeout as e:
             result["status"] = -3
+            return result
+        except socket.timeout as e:
+            result["status"] = -4
             return result
         result["status"] = response.status_code
         try:
@@ -444,23 +447,14 @@ class MNStatus(object):
             "q": f"datasource:{escapeSolrQueryTerm(self.node_id)}",
             "sort": "dateModified asc",
         }
-        session = requests.Session()
-        t0 = time.time()
-        _L.info("index %s %s", self.node_id, self.solr_url)
-        response = session.get(self.solr_url, params=params, timeout=self.timeout)
-        res_1 = json.loads(response.text)
-        params["sort"] = "dateModified desc"
-        response = session.get(self.solr_url, params=params, timeout=self.timeout)
-        res_2 = json.loads(response.text)
-        t1 = time.time()
         result = {
             "method": "cn.index",
-            "elapsed": t1 - t0,
+            "elapsed": 0,
             "url": self.solr_url,
-            "status": response.status_code,
-            "message": response.reason,
+            "status": 0,
+            "message": "",
             "tstamp": dtnow(),
-            "count": int(res_1["response"]["numFound"]),
+            "count": 0,
             "earliest_pid": None,
             "earliest_sid": None,
             "earliest": None,
@@ -470,11 +464,37 @@ class MNStatus(object):
             "latest": None,
             "latest_uploaded": None,
         }
+        session = requests.Session()
+        t0 = time.time()
+        _L.info("index %s %s", self.node_id, self.solr_url)
+        response = session.get(self.solr_url, params=params, timeout=self.timeout)
+        try:
+            res_1 = json.loads(response.text)
+        except json.decoder.JSONDecodeError as e:
+            result["status"] = -5
+            result["message"] = str(e)
+            return result
+        t1 = time.time()
+        result["elapsed"] = t1 - t0
+        result["count"] = int(res_1["response"]["numFound"])
         if result["count"] > 0:
             result["earliest_pid"] = res_1["response"]["docs"][0]["id"]
             result["earliest_sid"] = res_1["response"]["docs"][0].get("series_id", None)
             result["earliest"] = res_1["response"]["docs"][0]["dateModified"]
             result["earliest_uploaded"] = res_1["response"]["docs"][0]["dateUploaded"]
+        params["sort"] = "dateModified desc"
+        response = session.get(self.solr_url, params=params, timeout=self.timeout)
+        try:
+            res_2 = json.loads(response.text)
+        except json.decoder.JSONDecodeError as e:
+            result["status"] = -5
+            result["message"] = str(e)
+            return result
+        t1 = time.time()
+        result["elapsed"] = t1 - t0
+        result["status"] = response.status_code
+        result["message"] = response.reason
+        if result["count"] > 0:
             result["latest_pid"] = res_2["response"]["docs"][0]["id"]
             result["latest_sid"] = res_2["response"]["docs"][0].get("series_id", None)
             result["latest"] = res_2["response"]["docs"][0]["dateModified"]
