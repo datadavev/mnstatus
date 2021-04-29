@@ -3,7 +3,7 @@ name: update_node_status
 on:
   workflow_dispatch:
   schedule:
-    - cron: '6 5 * * *' #Every day at 06:05
+    - cron: '8 5 * * *' #Every day at 08:05 UTC
   
 jobs:
   update-nodes:
