@@ -13,7 +13,13 @@ import dateparser
 import xmltodict
 
 
-STATUS_THREADS = 8
+MAXIMUM_CONCURRENCY = 12
+"""Maximum number of concurrent tasks. 
+"""
+
+MAXIMUM_INDEX_TASKS = 5
+MAXIMUM_CN_TASKS = 3
+
 
 HTTP_TIMEOUT = 20.0
 """HTTP request timeout in seconds
@@ -502,6 +508,25 @@ class MNStatus(object):
         return result
 
 
+def runCheck(node, task):
+    """returns (node_id, task, result)"""
+    _L = getLogger()
+    res = None
+    if task == "ping":
+        _L.info("Start Ping %s", node.node_id)
+        res = node.pingStatus()
+    if task == "mn":
+        _L.info("Start MN Counts %s", node.node_id)
+        res = node.objectInfoFromMN()
+    if task == "cn":
+        _L.info("Start CN Counts %s", node.node_id)
+        res = node.objectInfoFromCN()
+    if task == "index":
+        _L.info("Start Index Counts %s", node.node_id)
+        res = node.objectInfoFromIndex()
+    return (node.node_id, task, res)
+
+
 class NodeList(object):
     def __init__(self, base_url="https://cn.dataone.org/cn"):
         self.base_url = base_url
@@ -621,31 +646,39 @@ class NodeList(object):
                 res.append(n.copy())
         self._nodes = res
 
-    def testNodeConnectivity(self, tests, solr_url=SOLR_URL, timeout=HTTP_TIMEOUT, node_ids_to_test=None):
-        def runCheck(node, task):
-            """returns (node_id, task, result)"""
-            _L = getLogger()
-            res = None
-            if task == "ping":
-                _L.info("Start Ping %s", node.node_id)
-                res = node.pingStatus()
-            if task == "mn":
-                _L.info("Start MN Counts %s", node.node_id)
-                res = node.objectInfoFromMN()
-            if task == "cn":
-                _L.info("Start CN Counts %s", node.node_id)
-                res = node.objectInfoFromCN()
-            if task == "index":
-                _L.info("Start Index Counts %s", node.node_id)
-                res = node.objectInfoFromIndex()
-            return (node.node_id, task, res)
-
+    def testNodeConnectivity(
+        self, tests, solr_url=SOLR_URL, timeout=HTTP_TIMEOUT, node_ids_to_test=None
+    ):
         async def runChecks():
+            _L = getLogger()
             tasks = []
-            with concurrent.futures.ThreadPoolExecutor(
-                max_workers=STATUS_THREADS
+            pending_tasks = []
+            active_task_names = []
+            active_task_display = []
+
+            def _checkServerLoad(task):
+                _mn, _t = task
+                # Allow only one cn task at a time
+                if _t == "cn":
+                    if active_task_names.count("cn") >= MAXIMUM_CN_TASKS:
+                        return False
+                # Allow only three index tasks at a time
+                elif _t == "index":
+                    if active_task_names.count("index") >= MAXIMUM_INDEX_TASKS:
+                        return False
+                active_task_names.append(_t)
+                return True
+
+            def _clearServerLoad(task_name):
+                _L.debug("task name = %s", task_name)
+                try:
+                    active_task_names.remove(task_name)
+                except ValueError as e:
+                    pass
+
+            with concurrent.futures.ProcessPoolExecutor(
+                max_workers=MAXIMUM_CONCURRENCY
             ) as executor:
-                loop = asyncio.get_event_loop()
                 test_nodes = self.nodes()
                 if isinstance(node_ids_to_test, list):
                     test_nodes = []
@@ -654,13 +687,44 @@ class NodeList(object):
                 for n in test_nodes:
                     mn = self.mnStatus(n["identifier"], solr_url, timeout)
                     for t in tests:
-                        tasks.append(loop.run_in_executor(executor, runCheck, *(mn, t)))
+                        pending_tasks.append((runCheck, (mn, t)))
+                futures_complete = False
+                total_tasks = len(pending_tasks)
+                while len(pending_tasks) > 0 or not futures_complete:
+                    for pending_task in pending_tasks:
+                        _job, _params = pending_task
+                        if _checkServerLoad(_params):
+                            future = executor.submit(_job, *_params)
+                            active_task_display.append(
+                                f"{_params[1]}::{_params[0].node_id}"
+                            )
+                            tasks.append(future)
+                            pending_tasks.remove(pending_task)
+                    _L.info(
+                        "total, pending, scheduled jobs = %s, %s, %s",
+                        total_tasks,
+                        len(pending_tasks),
+                        len(tasks),
+                    )
+                    _L.info("Jobs scheduled: %s", str(active_task_display))
+                    try:
+                        for future in concurrent.futures.as_completed(tasks, timeout=5):
+                            result = future.result()
+                            _clearServerLoad(result[1])
+                            _L.info("%s %s complete", result[1], result[0])
+                            self.setStatusInfo(result[0], result[1], result[2])
+                            tasks.remove(future)
+                            active_task_display.remove(f"{result[1]}::{result[0]}")
 
-            for result in await asyncio.gather(*tasks):
-                self.setStatusInfo(result[0], result[1], result[2])
+                    except concurrent.futures.TimeoutError:
+                        _L.debug("No futures to clear")
+                    futures_complete = True
+                    for future in tasks:
+                        if not future.done():
+                            futures_complete = False
+                            break
 
         self._ensureNodes()
         loop = asyncio.get_event_loop()
         future = asyncio.ensure_future(runChecks())
         loop.run_until_complete(future)
-
