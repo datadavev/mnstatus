@@ -4,6 +4,8 @@ import logging
 import logging.handlers
 import multiprocessing
 import click
+import json
+import csv
 import mnstatus
 
 LOG_LEVELS = {
@@ -26,8 +28,10 @@ P = ""  # purple
 
 PRODUCTION_CN = "https://cn.dataone.org/cn"
 
+
 def getLogFormatter():
     return logging.Formatter("%(asctime)-8s %(levelname)-6s: %(message)-s", "%H:%M:%S")
+
 
 def stateInt(state):
     if state.lower() == "up":
@@ -123,7 +127,7 @@ def listNodes(ctx, n_type, n_state, show_full, tests, timeout):
     cn.filterNodeState(n_state)
     cn.filterNodeType(n_type)
     if len(tests) > 0:
-        cn.testNodeConnectivity(tests,  solr_url=ctx.obj["solr_url"], timeout=timeout)
+        cn.testNodeConnectivity(tests, solr_url=ctx.obj["solr_url"], timeout=timeout)
     if ctx.obj.get("json_format", False):
         if show_full:
             print(mnstatus.jsonDumps(cn.nodes()))
@@ -131,20 +135,20 @@ def listNodes(ctx, n_type, n_state, show_full, tests, timeout):
             res = []
             for n in cn.nodes():
                 entry = {
-                        "identifier": n["identifier"],
-                        "baseURL": n["baseURL"],
-                        "name": n["name"],
-                        "@state": n["@state"],
-                        "@type": n["@type"],
-                        "lastHarvested": n.get("synchronization", {}).get(
-                            "lastHarvested", ""
-                        ),
-                    }
+                    "identifier": n["identifier"],
+                    "baseURL": n["baseURL"],
+                    "name": n["name"],
+                    "@state": n["@state"],
+                    "@type": n["@type"],
+                    "lastHarvested": n.get("synchronization", {}).get(
+                        "lastHarvested", ""
+                    ),
+                }
                 if "status" in n.keys():
                     if "ping" in n["status"]:
                         entry["ping"] = {
                             "status": n["status"]["ping"]["status"],
-                            "msg": n["status"]["ping"]["message"]
+                            "msg": n["status"]["ping"]["message"],
                         }
                     if "mn" in n["status"]:
                         entry["mn"] = {
@@ -166,7 +170,7 @@ def listNodes(ctx, n_type, n_state, show_full, tests, timeout):
         return 0
     for n in cn.nodes():
         lh = n.get("synchronization", {}).get("lastHarvested", "")
-        _ping = n.get("status",{}).get("ping",{}).get("status")
+        _ping = n.get("status", {}).get("ping", {}).get("status")
         print(
             f"{n['identifier']:25} {n['@type']} {stateInt(n['@state'])} {n['baseURL']:55} {lh} {_ping}"
         )
@@ -197,10 +201,89 @@ def checkNode(ctx, node_id, timeout, tests):
     cn = mnstatus.NodeList(base_url=ctx.obj["cnode_url"])
     if node_id.startswith("http"):
         node_id = cn.nodeId(node_id)
-    cn.testNodeConnectivity(tests, solr_url=ctx.obj["solr_url"], timeout=timeout, node_ids_to_test=[node_id,])
+    cn.testNodeConnectivity(
+        tests,
+        solr_url=ctx.obj["solr_url"],
+        timeout=timeout,
+        node_ids_to_test=[
+            node_id,
+        ],
+    )
     mn = cn.node(node_id)
     print(mnstatus.jsonDumps(mn["status"]))
     return 0
+
+
+@main.command("2csv", short_help="JSON report to CSV")
+@click.argument("source")
+@click.option("-o", "--output", default="-", help="Output file (stdout default)")
+@click.pass_context
+def reportJson2CSV(ctx, source, output):
+    """Convert the JSON report to CSV."""
+    _L = mnstatus.getLogger()
+    if not os.path.exists(source):
+        _L.error("Source does not exist: %s", source)
+        return 1
+    data = None
+    with open(source, "r") as fsrc:
+        data = json.load(fsrc)
+    header = [
+        "tstamp",
+        "node_id",
+        "baseurl",
+        "state",
+        "sync",
+        "status",
+        "mn.count",
+        "mn.elapsed",
+        "mn.earliest",
+        "mn.latest",
+        "cn.count",
+        "cn.elapsed",
+        "cn.earliest",
+        "cn.latest",
+        "idx.count",
+        "idx.elapsed",
+        "idx.earliest",
+        "idx.latest",
+    ]
+    f_dest = None
+    _doclose = True
+    if output == "-":
+        f_dest = sys.stdout
+        _doclose = False
+    else:
+        f_dest = open(output, "w")
+    try:
+        csvout = csv.DictWriter(f_dest, fieldnames=header, extrasaction="ignore")
+        csvout.writeheader()
+        for node in data:
+            if node.get("@type", "").lower() == "mn":
+                status = node.get("status", {})
+                row = {
+                    "tstamp": status.get("ping", {}).get("tstamp"),
+                    "node_id": node.get("identifier"),
+                    "baseurl": node.get("baseURL"),
+                    "state": node.get("@state"),
+                    "sync": node.get("@synchronize"),
+                    "status": status.get("ping", {}).get("status"),
+                    "mn.count": status.get("mn", {}).get("count"),
+                    "mn.elapsed": status.get("mn", {}).get("elapsed"),
+                    "mn.earliest": status.get("mn", {}).get("earliest"),
+                    "mn.latest": status.get("mn", {}).get("latest"),
+                    "cn.count": status.get("cn", {}).get("count"),
+                    "cn.elapsed": status.get("cn", {}).get("elapsed"),
+                    "cn.earliest": status.get("cn", {}).get("earliest"),
+                    "cn.latest": status.get("cn", {}).get("latest"),
+                    "idx.count": status.get("index", {}).get("count"),
+                    "idx.elapsed": status.get("index", {}).get("elapsed"),
+                    "idx.earliest": status.get("index", {}).get("earliest"),
+                    "idx.latest": status.get("index", {}).get("latest"),
+                }
+                csvout.writerow(row)
+    finally:
+        if _doclose:
+            f_dest.close()
 
 
 if __name__ == "__main__":
