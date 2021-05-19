@@ -3,6 +3,14 @@
 Command line tool to evaluate connectivity and object count 
 consistency for DataONE member nodes.
 
+## Current 
+
+This tool is run by a Github action on a regular basis. The output is available at:
+
+* [JSON Report](https://raw.githubusercontent.com/datadavev/mnstatus/main/data/node_status.json)
+* [CSV Extract](https://raw.githubusercontent.com/datadavev/mnstatus/main/data/node_status.csv)
+* [Vew CSV](https://flatgithub.com/datadavev/mnstatus?filename=data%2Fnode_status.csv)
+
 ## Installation
 
 Simplest is to install using [`pipx`](https://github.com/pipxproject/pipx):
