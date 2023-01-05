@@ -228,7 +228,6 @@ def reportJson2CSV(ctx, source, output):
     with open(source, "r") as fsrc:
         data = json.load(fsrc)
     header = [
-        "tstamp",
         "node_id",
         "baseurl",
         "state",
@@ -246,6 +245,7 @@ def reportJson2CSV(ctx, source, output):
         "idx.elapsed",
         "idx.earliest",
         "idx.latest",
+        "tstamp",
     ]
     f_dest = None
     _doclose = True
@@ -261,7 +261,6 @@ def reportJson2CSV(ctx, source, output):
             if node.get("@type", "").lower() == "mn":
                 status = node.get("status", {})
                 row = {
-                    "tstamp": status.get("ping", {}).get("tstamp"),
                     "node_id": node.get("identifier"),
                     "baseurl": node.get("baseURL"),
                     "state": node.get("@state"),
@@ -279,6 +278,7 @@ def reportJson2CSV(ctx, source, output):
                     "idx.elapsed": status.get("index", {}).get("elapsed"),
                     "idx.earliest": status.get("index", {}).get("earliest"),
                     "idx.latest": status.get("index", {}).get("latest"),
+                    "tstamp": status.get("ping", {}).get("tstamp"),
                 }
                 csvout.writerow(row)
     finally:
