@@ -13,6 +13,9 @@ jobs:
         os: [ubuntu-latest]
         python-version: [3.9]
     steps:
+    - name: tStamp
+      id: tnow
+      run:  echo NOW=$(bc <<< "scale=2; $(date +%s) / 86400 + 40587") >> $GITHUB_ENV
     - uses: actions/checkout@v2
     # Install dependencies
     - name: Set up Python ${{ matrix.python-version }}
@@ -31,5 +34,5 @@ jobs:
         poetry run mnstatus 2csv -o data/node_status.csv data/node_status.json
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Update node_status
+        commit_message: Update node_status ${{env.NOW}}
    
