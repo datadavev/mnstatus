@@ -200,7 +200,7 @@ class ObjectList:
 
 class MNStatus(object):
     def __init__(
-        self, node_id, base_url, cn_url, solr_url, version=2, timeout=HTTP_TIMEOUT
+        self, node_id, base_url, cn_url, solr_url, version=2, timeout=HTTP_TIMEOUT, software_version=None,
     ):
         self.node_id = node_id
         self.base_url = base_url
@@ -214,6 +214,7 @@ class MNStatus(object):
         if version < 2:
             self.version = "v1/"
         self.timeout = timeout
+        self.software_version = software_version
         self._session = None
 
     def _doget(
@@ -581,6 +582,15 @@ class NodeList(object):
                 return n["identifier"]
         return None
 
+    def nodeSoftwareVersion(self, node_id):
+        self._ensureNodes()
+        n = self.node(node_id)
+        props = n.get("property", [])
+        for prop in props:
+            if prop.get("@key") == "metacat_version":
+                return f"{prop['@key']}={prop['#text']}"
+        return None
+
     def nodeServiceVersion(self, node_id, service="MNRead"):
         n = self.node(node_id)
         if n is None:
@@ -612,6 +622,7 @@ class NodeList(object):
             solr_url,
             version=version,
             timeout=timeout,
+            software_version=self.nodeSoftwareVersion(node_id)
         )
 
     def setStatusInfo(self, node_id, task, info):
