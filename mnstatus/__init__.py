@@ -269,6 +269,9 @@ class MNStatus(object):
         except socket.timeout as e:
             result["status"] = -4
             return result
+        except requests.exceptions.ConnectTimeout as e:
+            result["status"] = -5
+            return result
         result["status"] = response.status_code
         try:
             olist = xmltodict.parse(response.text, process_namespaces=True)
