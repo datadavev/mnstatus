@@ -1,0 +1,1761 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "urn:node:CNUNM1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.61,
+          35.11
+        ]
+      },
+      "properties": {
+        "type": "cn",
+        "state": "down",
+        "name": "cn-unm-1",
+        "description": "University of New Mexico Coordinating Node",
+        "operational_status": "operational",
+        "node_name": "CN_UNM",
+        "date_operational": "2012-07-01T00:00:0.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CNUCSB1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.85,
+          34.42
+        ]
+      },
+      "properties": {
+        "type": "cn",
+        "state": "up",
+        "name": "cn-ucsb-1",
+        "description": "University of California Santa Barbara Coordinating Node",
+        "operational_status": "operational",
+        "node_name": "CN_UCSB",
+        "date_operational": "2012-07-01T00:00:0.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CNORC1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3,
+          35.93
+        ]
+      },
+      "properties": {
+        "type": "cn",
+        "state": "up",
+        "name": "cn-orc-1",
+        "description": "Oak Ridge National Laboratory Coordinating Node",
+        "operational_status": "operational",
+        "node_name": "CN_ORC",
+        "date_operational": "2012-07-01T00:00:0.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:KNB",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.697933,
+          34.420222
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "KNB Data Repository",
+        "description": "The Knowledge Network for Biocomplexity (KNB) is a national network intended to facilitate  ecological and environmental research on biocomplexity.",
+        "operational_status": "operational",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "Knowledge Network for Biocomplexity",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/KNB.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ESA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.036133,
+          38.907064
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "ESA Data Registry",
+        "description": "The data sets registered here are associated with articles published in the journals of the Ecological Society of America.",
+        "operational_status": "operational",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "ESA Data Registry",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ESA.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SANPARKS",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.212891,
+          -25.76032
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "SANParks Data Repository",
+        "description": "The South African National Park Data Repository is the primary source for comprehensive information about scientific and research data sets collected throughout the South African National Park System.",
+        "operational_status": "operational",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "SANParks Data Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SANPARKS.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ORNLDAAC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.269943,
+          36.004118
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "ORNL DAAC",
+        "description": "The ORNL DAAC archives data produced by NASA's Terrestrial Ecology Program. The DAAC provides data and information relevant to biogeochemical dynamics, ecological data, and environmental processes, critical for understanding the dynamics relating to the biological, geological, and chemical components of Earth's environment.",
+        "operational_status": "contributing",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "ORNL DAAC",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ORNLDAAC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:LTER",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.615448,
+          35.109237
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "U.S. LTER Network",
+        "description": "The U.S. Long Term Ecological Research Network (LTER) data include ecological observations from the study of pattern and control of primary production, movement of both organic and inorganic matter, disturbance patterns, and the spatial and temporal distribution of populations selected to represent trophic structure. The data originates from 27 sites across the conterminous United States of America, Alaska, Antarctica, Puerto Rico, and French Polynesia and spans a period from over 100 years ago to the present.",
+        "operational_status": "operational",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "LTER Network Member Node",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/LTER.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CDL",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.270966,
+          37.803274
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "UC3 Merritt",
+        "description": "A cross-domain repository for data and metadata provided by the University of California Curation Center, California Digital Library at the University of California",
+        "operational_status": "operational",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "Merritt Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CDL.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:PISCO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.222656,
+          44.590467
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "PISCO MN",
+        "description": "The Partnership for Interdisciplinary Studies of Coastal Oceans is a long-term ecosystem research and monitoring program established with the goals of understanding dynamics of the coastal ocean ecosystem along the U.S. west coast,  sharing that knowledge so ocean managers and policy makers can take science based decisions regarding coastal and marine stewardship, and producing a new generation of scientists trained in interdisciplinary collaborative approaches.",
+        "operational_status": "operational",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "PISCO MN",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PISCO.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ONEShare",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.787576,
+          35.10619
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "ONEShare DataONE Member Node",
+        "description": "A DataONE member node implemented in GMN.",
+        "operational_status": "operational",
+        "date_operational": "2012-10-02T00:00:0.000Z",
+        "node_name": "ONEShare Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ONEShare.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:mnORC1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3,
+          35.93
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "DataONE ORC Dedicated Replica Server",
+        "description": "A server that provides replica storage across the DataONE Network for all participating institutions",
+        "operational_status": "replicator",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "DataONE ORC Dedicated Replica Server"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:mnUNM1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.61,
+          35.11
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "DataONE UNM Dedicated Replica Server",
+        "description": "A server that provides replica storage across the DataONE Network for all participating institutions",
+        "operational_status": "replicator",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "DataONE UNM Dedicated Replica Server"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:mnUCSB1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.85,
+          34.42
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "DataONE UCSB Dedicated Replica Server",
+        "description": "A server that provides replica storage across the DataONE Network for all participating institutions",
+        "operational_status": "replicator",
+        "date_operational": "2012-07-23T00:00:0.000Z",
+        "node_name": "DataONE UCSB Dedicated Replica Server"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:TFRI",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.563721,
+          24.976099
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "TFRI Data Catalog",
+        "description": "TFRI emphasizes the sustainable management and multi-purpose utilization of forests",
+        "operational_status": "operational",
+        "date_operational": "2013-06-18T00:00:0.000Z",
+        "node_name": "Taiwan Forestry Research Institute",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TFRI.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:USANPN",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.926479,
+          32.221743
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "USA National Phenology Network",
+        "description": "DataONE member node hosting annual phenology datasets for the USA-NPN.",
+        "operational_status": "contributing",
+        "date_operational": "2014-01-28T00:00:0.000Z",
+        "node_name": "USA National Phenology Network",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/USANPN.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SEAD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.71582,
+          42.195969
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "SEAD Virtual Archive",
+        "description": "SEAD Virtual Archive is part of the SEAD DataNet project [http://sead-data.net/].\n    SEAD Virtual Archive is a thin virtualization layer on top of multiple university Institutional Repositories\n    focusing on preservation of long-tail scientific data.",
+        "operational_status": "operational",
+        "date_operational": "2013-12-18T00:00:0.000Z",
+        "node_name": "SEAD Virtual Archive",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SEAD.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:GOA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.902214,
+          61.219784
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Gulf of Alaska Data Portal",
+        "description": "The Gulf of Alaska Data Portal archives environmental observations arising from monitoring and experimentation in the Gulf of Alaska and related regions, and particularly in oil-impacted regions of Prince William Sound and locations on the southern coast of Alaska. Many data sets are time series data spanning multiple decades and continuing through the present. The Gulf of Alaska Data Portal provides long-term, consistent, scientific data that is critical to allow us to detect and understand ecosystem changes and shifts that directly or indirectly (e.g. through food web relationships) influence the species and ecosystem services of the Gulf of Alaska.",
+        "operational_status": "operational",
+        "date_operational": "2013-11-15T00:00:0.000Z",
+        "node_name": "Gulf of Alaska Data Portal",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GOA.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:KUBI",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.234642,
+          38.971688
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "University of Kansas - Biodiversity Institute",
+        "description": "This DataONE Member Node is operated by The University of Kansas Biodiversity Institute.  The contents of this node are predicted climate layers used for species distribution models.",
+        "operational_status": "contributing",
+        "date_operational": "2014-02-20T00:00:0.000Z",
+        "node_name": "University of Kansas - Biodiversity Institute",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/KUBI.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:LTER_EUROPE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.136227,
+          51.526466
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "LTER Europe Member Node",
+        "description": "DataOne node for LTER-Europe",
+        "operational_status": "operational",
+        "date_operational": "2014-06-18T00:00:0.000Z",
+        "node_name": "Europe Long-Term Ecosystem Research Network (LTER Europe)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/LTER_EUROPE.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:DRYAD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.896942,
+          35.989674
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Dryad Digital Repository",
+        "description": "DataONE proxy for Dryad, an international repository of data underlying peer-reviewed scientific and medical literature.",
+        "operational_status": "operational",
+        "date_operational": "2014-02-22T00:00:0.000Z",
+        "node_name": "Dryad Digital Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DRYAD.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CLOEBIRD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.501923,
+          42.443855
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "Cornell Lab of Ornithology - eBird",
+        "description": "eBird collects observational data on birds from around the world with a date range from 1800 to current. eBird is a valuable data resource for science and conservation, collecting millions of bird observations per month.",
+        "operational_status": "deprecated",
+        "date_operational": "2013-07-01T00:00:0.000Z",
+        "node_name": "Cornell Lab of Ornithology eBird",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CLOEBIRD.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:EDACGSTORE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.600685,
+          35.108394
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "EDAC Gstore Repository",
+        "description": "Earth Data Analysis Center's (EDAC) Geographical Storage, Transformation and Retrieval Engine (GSTORE) platform archives data produced by various NM organizations, including NM EPSCoR and RGIS. GSTORE primarily houses GIS and other digital documents relevant to state agencies, local government, and scientific researchers. See RGIS and NM EPSCoR for more information on the scope of data. It currently uses the FGDC metadata standard to describe all of its holdings.",
+        "operational_status": "operational",
+        "date_operational": "2014-06-23T00:00:0.000Z",
+        "node_name": "Earth Data Analysis Center (EDAC)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EDACGSTORE.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:IOE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.039214,
+          45.685873
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Montana IoE Data Repository",
+        "description": "The Montana Institute on Ecosystems (IoE) Data Repository archives and manages ecological research collections produced investigators within the Montana University System. The Montana IoE Data Repository is also the primary archive for data products generated by Montana EPSCoR projects.",
+        "operational_status": "operational",
+        "date_operational": "2014-08-13T00:00:0.000Z",
+        "node_name": "Montana IoE Data Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IOE.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:US_MPC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.251657,
+          44.935908
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Minnesota Population Center",
+        "description": "The Minnesota Population Center disseminates integrated census and survey data from the U.S. and around the world; spatial boundary data for U.S. and international administrative units; and global environmental data on topics including land use, land cover, and climate. MPC data holdings include microdata (describing individuals and households), area-level data (describing places), and raster data. The data are designed to be interoperable for spatiotemporal comparisons and MPC data access systems include tools for integrating across data sets and formats.",
+        "operational_status": "operational",
+        "date_operational": "2014-12-22T00:00:0.000Z",
+        "node_name": "Minnesota Population Center (MPC)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/US_MPC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:EDORA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.32282,
+          35.934685
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "Environmental Data for the Oak Ridge Area (EDORA)",
+        "description": "Environmental Data for the Oak Ridge Area (EDORA), including the Walker Branch Watershed.  These projects have all contributed to a more complete understanding of how forest watersheds function and have provided insights into the solution of energy-related problems associated with air pollution, contaminant transport, and forest nutrient dynamics. This is one of a few sites in the world characterized by long-term, intensive environmental studies.",
+        "operational_status": "deprecated",
+        "date_operational": "2014-11-24T00:00:0.000Z",
+        "node_name": "Environmental Data for the Oak Ridge Area",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EDORA.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:RGD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.32282,
+          35.934685
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "Regional and Global biogeochemical dynamics Data (RGD)",
+        "description": "Regional and global biogeochemical dynamics data can be used to improve our understanding of the structure and function of various ecosystems; to enable prediction across spatial and temporal scales; and to parameterize and validate terrestrial ecosystem models.",
+        "operational_status": "deprecated",
+        "date_operational": "2014-11-24T00:00:0.000Z",
+        "node_name": "Regional and Global Biogeochemical Dynamics Data (RGD)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RGD.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:GLEON",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.428711,
+          43.125041
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "GLEON Data Repository",
+        "description": "Data archive for the Global Lakes Ecological Observatory Network (GLEON), an international community of Lake researchers.",
+        "operational_status": "contributing",
+        "date_operational": "2015-03-10T00:00:0.000Z",
+        "node_name": "Global Lake Ecological Observatory Network (GLEON)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GLEON.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:IARC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.697761,
+          64.88724
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "IARC Data Archive",
+        "description": "The International Arctic Research Center (IARC) Data Archive, a long term repository for Arctic data.",
+        "operational_status": "contributing",
+        "date_operational": "2015-05-08T00:00:0.000Z",
+        "node_name": "International Arctic Research Center (IARC) Data Archive",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IARC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NMEPSCOR",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.612702,
+          35.119067
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "NM EPSCoR Tier 4 Node",
+        "description": "New Mexico Experimental Program to Stimulate Competitive Research Data Collection",
+        "operational_status": "operational",
+        "date_operational": "2015-05-27T00:00:0.000Z",
+        "node_name": "NM EPSCoR",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NMEPSCOR.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:TERN",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.603957,
+          -34.965406
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "TERN Australia",
+        "description": "TERN is Australia's land ecosystem observatory. TERN observes and measures the cause and effect of ecosystem change-from site to continental scale-and delivers data streams that enable environmental research and management.",
+        "operational_status": "operational",
+        "date_operational": "2015-06-23T00:00:0.000Z",
+        "node_name": "TERN Australia",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TERN.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NKN",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.000031,
+          46.742626
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "University of Idaho Research Computing and Data Services",
+        "description": "RCDS manages diverse collections of research data across many disciplines, with a strong emphasis on earth science, ecology, environmental, climate, and hydrology. We focus on archiving data specific to Idaho and the Pacific Northwest region. Much of our data is collected under recent or current federally funded grants such as NSF EPSCoR, USDA REACCH, or USGS Climate Science Center. Our largest data collections include raw and processed regional LiDAR products, aerial UAS imagery (RGB, Thermal, Multispectral), downscaled climate scenario data (netCDF), and legacy stream ecology datasets.",
+        "operational_status": "operational",
+        "date_operational": "2016-06-28T00:00:0.000Z",
+        "node_name": "University of Idaho Research Computing and Data Services",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NKN.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:USGS_SDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.333814,
+          35.98693
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "USGS Science Data Catalog",
+        "description": "The Science Data Catalog describes USGS-produced, authoritative data that have undergone the data release process outlined in the USGS Fundamental Science Practices. The Catalog includes metadata describing individual datasets, data collections and observational or remotely-sensed data contained in national systems (rather than records about individual observations).",
+        "operational_status": "operational",
+        "date_operational": "2015-11-12T00:00:0.000Z",
+        "node_name": "USGS Science Data Catalog",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/USGS_SDC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NRDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.817505,
+          39.570488
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "NRDC DataONE member node",
+        "description": "Production Member Node for Nevada Research Data Center (NRDC)",
+        "operational_status": "operational",
+        "date_operational": "2015-12-21T00:00:0.000Z",
+        "node_name": "Nevada Research Data Center",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NRDC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NCEI",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.032066,
+          38.897603
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "NOAA NCEI Environmental Data Archive",
+        "description": "The NOAA National Centers for Environmental Information (NCEI) is the merger of NOAA's three former National Data Centers: The National Oceanographic Data Center (NODC), the National Climatic Data Center (NCDC), and the National Geophysical Data Center (NGDC).",
+        "operational_status": "operational",
+        "date_operational": "2016-03-31T00:00:0.000Z",
+        "node_name": "NOAA NCEI Environmental Data Archive",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NCEI.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:PPBIO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0,
+          -3.17
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "PPBio",
+        "description": "Western Amazonian Biodiversity Research Project",
+        "operational_status": "operational",
+        "date_operational": "2016-05-17T00:00:0.000Z",
+        "node_name": "Programa de Pesquisa em Biodiversidade (PPBio)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PPBIO.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NEON",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.28,
+          40.02
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "NEON Member Node",
+        "description": "NEON Production Member Node",
+        "operational_status": "operational",
+        "date_operational": "2016-07-13T00:00:0.000Z",
+        "node_name": "National Ecological Observatory Network",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NEON.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:TDAR",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.928748,
+          33.431713
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "The Digital Archaeological Record",
+        "description": "tDAR is an international digital archive and repository that houses data about archaeological investigations, research, resources, and scholarship.  tDAR provides researchers new avenues to discover and integrate information relevant to topics they are studying. Users can search tDAR for digital documents, data sets, images, GIS files, and other data resources from archaeological projects spanning the globe.  For data sets, users also can use data integration tools in tDAR to simplify and illuminate comparative research.",
+        "operational_status": "operational",
+        "date_operational": "2017-01-25T00:00:0.000Z",
+        "node_name": "the Digital Archaeological Record",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TDAR.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ARCTIC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.69,
+          34.42
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Arctic Data Center",
+        "description": "The US National Science Foundation Arctic Data Center operates as the primary repository supporting the NSF Arctic community for data preservation and access. The Center helps the research community reproducibly preserve and discover all products of NSF-funded science in the Arctic, including data, metadata, software, documents, and provenance that link these in an open and reproducible way.",
+        "operational_status": "operational",
+        "date_operational": "2016-12-01T00:00:0.000Z",
+        "node_name": "Arctic Data Center",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ARCTIC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:BCODMO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.669559,
+          41.526787
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Biological and Chemical Oceanography Data Management Office (BCO-DMO)",
+        "description": "DataONE proxy for BCO-DMO, the Biological and Chemical Oceanography Data Management Office.",
+        "operational_status": "operational",
+        "date_operational": "2016-11-29T00:00:0.000Z",
+        "node_name": "Biological and Chemical Oceanography Data Management Office (BCO-DMO)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BCODMO.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:GRIIDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.4,
+          27.8
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "GRIIDC",
+        "description": "GRIIDC is a multidisciplinary data repository that stores and disseminates data primarily collected or generated from the Gulf of Mexico region. Data can be searched and downloaded for free and data can be stored for a fee. Datasets are assigned digital object identifiers and are described with ISO-19115-2 metadata. Our mission is to ensure a data and information legacy that promotes continual scientific discovery and public awareness of the Gulf of Mexico ecosystem.",
+        "operational_status": "operational",
+        "date_operational": "2017-01-20T00:00:0.000Z",
+        "node_name": "GRIIDC",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GRIIDC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:R2R",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.909068,
+          41.011344
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Rolling Deck to Repository (R2R)",
+        "description": "Allow data from the Rolling Deck to Repository (R2R) at http://www.rvdata.us/ to be accessed through the DataONE infrastructure.",
+        "operational_status": "operational",
+        "date_operational": "2017-01-18T00:00:0.000Z",
+        "node_name": "Rolling Deck to Repository (R2R)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RD2R.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:EDI",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.62,
+          35.08
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Environmental Data Initiative",
+        "description": "The Environmental Data Initiative is an NSF-funded project meant to accelerate curation and archive of environmental data, emphasizing data from projects funded by the NSF DEB.  Programs served include Long Term Research in Environmental Biology (LTREB), Organization for Biological Field Stations (OBFS), Macrosystems Biology (MSB), and Long Term Ecological Research (LTER). Note that data from the LTER program may be found on the LTER Member Node.",
+        "node_name": "Environmental Data Initiative",
+        "operational_status": "operational",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EDI.png",
+        "date_operational": "2017-04-07T20:23:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:UIC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.66,
+          41.87
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "A Member Node for University of Illinois at Chicago.",
+        "description": "The University of Illinois at Chicago, a renowned Research Institute, has under its operations a DataONE Member Node to make various research data available from other participating member nodes.",
+        "operational_status": "deprecated",
+        "node_name": "University Library at the University of Illinois at Chicago",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/UIC.png",
+        "date_operational": "2017-08-30T00:00:0.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:RW",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.9,
+          61.21
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Research Workspace",
+        "description": "The Research Workspace is a web-based, scientific data management platform that allows researchers to store and share their data.",
+        "node_name": "Research Workspace",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RW.png",
+        "operational_status": "operational",
+        "date_operational": "2017-07-25T00:00:0.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:FEMC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.19,
+          44.45
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Forest Ecosystem Monitoring Cooperative Member Node",
+        "description": "This DataONE Member Node is operated by the Forest Ecosystem Monitoring Cooperative, housing research and monitoring data on forested ecosystems",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/FEMC_logo_fulltitle_right1.png",
+        "date_operational": "2017-09-29T19:20:00",
+        "operational_status": "operational",
+        "node_name": "Forest Ecosystem Monitoring Cooperative"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:OTS_NDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.05,
+          9.94
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "down",
+        "name": "Organization for Tropical Studies - Neotropical Data Center",
+        "description": "The Organization for Tropical Studies NeoTropical Data Center (OTS-NTDC) is a U.S. based non-profit consortium located at Duke University, and composed of over 60 academic and research institutions from the United States, Costa Rica, South Africa, Mexico, Peru and Australia. OTS-NDC is designed to safeguard and promote sharing and reuse of scientific data from neotropical ecosystems of Costa Rica. OTS-NDC manages ecological data generated at research stations located in La Selva, Las Cruces, and Palo Verde, Costa Rica by both OTS-NDC and independent researchers. OTS-NDC was originally funded by the U.S. NSF (FSML program), but is now operated autonomously by OTS-NDC.",
+        "node_name": "Organization for Tropical Studies",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OTS_NDC.png",
+        "operational_status": "deprecated",
+        "date_operational": "2018-02-26T20:56:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:PANGAEA",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8506,
+          53.1101
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "PANGAEA",
+        "description": "Data publisher for Earth & Environmental Science",
+        "node_name": "PANGAEA Data Publisher for Earth and Environmental Science",
+        "operational_status": "operational",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PANGAEA.png",
+        "date_operational": "2018-03-20T17:46:00.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ESS_DIVE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.2528,
+          37.8758
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "ESS-DIVE",
+        "description": "The U.S. Department of Energy's (DOE) Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) is a data archive for Earth and environmental science data. ESS-DIVE is funded by the Data Management program within the Climate and Environmental Science Division under the DOE's Office of Biological and Environmental Research program (BER), and is maintained by the Lawrence Berkeley National Laboratory.",
+        "node_name": "ESS-DIVE",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ESS_DIVE1.png",
+        "operational_status": "operational",
+        "date_operational": "2018-09-17T22:43:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CAS_CERN",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.4,
+          39.9
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Chinese Ecosystem Research Network (CERN)",
+        "description": "Chinese Ecosystem Research Network (CERN) is a national network intended to integrate networked observation, experiment, and modeling of the typical ecosystems in China. This member node (CAS_CERN) includes various data obtained from long-term observation, investigation and simulation, which is critical to help detect and understand ecosystem changes of China.",
+        "operational_status": "operational",
+        "date_operational": "2018-10-19T12:00:000.000Z",
+        "node_name": "Chinese Ecosystem Research Network (CERN)",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/cern_logo.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:FIGSHARE_CARY",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.73,
+          41.78
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Cary Institute of Ecosystem Studies (powered by Figshare)",
+        "description": "Cary Institute of Ecosystem Studies generates rigorous scientific knowledge about ecological systems and their importance to human well-being.",
+        "node_name": "Cary Institute of Ecosystem Studies (powered by Figshare)",
+        "operational_status": "operational",
+        "date_operational": "2019-02-22T17:38:00.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/Cary_Institute.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:IEDA_EARTHCHEM",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91,
+          41.01
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "EarthChem Library",
+        "description": "The EarthChem Library (ECL) is a US-NSF funded domain data repository that provides preservation, publication, and access services for datasets and other digital objects from geochemical, geochronological, petrological, mineralogical, and other related research.",
+        "node_name": "EarthChem Library",
+        "operational_status": "operational",
+        "date_operational": "2019-03-04T23:50:00.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EARTHCHEM.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:IEDA_USAP",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91,
+          41.01
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "US Antarctic Program Data Center",
+        "description": "The US Antarctic Program Data Center (USAP-DC) is funded by the US National Science Foundation to provide data preservation, publication, and access services for data acquired for the USAP. The Center also works to improve access to the broader network of Antarctic datasets hosted in other disciplinary data repositories and registered with the Antarctic Master Directory of GCMD.",
+        "node_name": "US Antarctic Program Data Center",
+        "operational_status": "operational",
+        "date_operational": "2019-03-04T23:50:00.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_USAP.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:IEDA_MGDL",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91,
+          41.01
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "IEDA MGDL",
+        "description": "The Marine Geoscience Digital Library (MGDL) is funded by the US National Science Foundation to provide data preservation, publication, and access services for the marine geoscience research community. Data management services are provided for geological and geophysical field data acquired with ships, towed platforms and submersibles and associated science products.",
+        "node_name": "IEDA: Marine-Geo Digital Library",
+        "operational_status": "operational",
+        "date_operational": "2019-03-04T23:50:00.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_MGDL.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:METAGRIL",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.61,
+          45.51
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "metaGRIL",
+        "description": "GRIL data catalog",
+        "node_name": "GRIL: metaGRIL",
+        "operational_status": "operational",
+        "date_operational": "2019-09-13T21:00:00.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/METAGRIL.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ARM",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.25,
+          36.02
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "ARM - Atmospheric Radiation Measurement Research Facility",
+        "description": "ARM focuses on obtaining continuous measurements\u2014supplemented by field campaigns\u2014and providing data products that promote the advancement of climate models. Serving users worldwide, the ARM Data Center collects and archives approximately 25 terabytes of data per month. ARM data include routine data products, value-added products (VAPs), field campaign data, complementary external data products from collaborating programs, and data contributed by ARM principal investigators for use by the scientific community. Data quality reports, graphical displays of data availability/quality, and data plots are also available from the ARM Data Center.",
+        "node_name": "ARM - Atmospheric Radiation Measurement Research Facility",
+        "operational_status": "operational",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ARM.png",
+        "date_operational": "2020-09-10T12:01:01Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CA_OPC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.497652,
+          38.575604
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "California Ocean Protection Council Data Repository",
+        "description": "The California Ocean Protection Council (OPC) serves as the California Governor's advisor on ocean and coastal policy, and is charged with safeguarding coastal and ocean ecosystems for the benefit of all Californians. OPC provides best available science to decision-makers, develops science-based policy recommendations, strategically deploys funding and other resources, and collaborates across jurisdictional, programmatic, and regional boundaries.",
+        "operational_status": "operational",
+        "node_name": "California Ocean Protection Council Data Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CA_OPC.png",
+        "date_operational": "2020-08-11T00:20:06.000Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:PNDB",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.356395,
+          48.841438
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "PNDB Metacat Node",
+        "description": "The PNDB French Biodiversity national e-infrastructure operates as the primary repository supporting the national research Biodiversity community for open data structuration and access. The Center helps the research community reproducibly preserve and discover all biodiversity open products of France, including data, metadata, software, documents, and provenance that link these in an open and reproducible way.",
+        "date_operational": "2021-12-15T00:00:0.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PNDB.png",
+        "node_name": "PNDB Data Repository",
+        "operational_status": "operational"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:HYDROSHARE",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.01852,
+          35.93967
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Hydroshare",
+        "description": "DataONE proxy for Hydroshare, CUAHSI's online collaboration environment for sharing data, models, and code.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/HYDROSHARE.png",
+        "date_operational": "2021-07-18T16:10:26Z",
+        "operational_status": "operational",
+        "node_name": "Hydroshare"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NPDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.786,
+          53.003
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Netherlands Polar Data Center (NPDC)",
+        "description": "The Netherlands Polar Data Center (NPDC) is part of the Netherlands Polar Program (NPP). NPDC archives and provides access to the data of Polar Research by researchers funded by Dutch Research Council (NWO) or otherwise carried out by researchers from Dutch universities and research institutions. The repository provides: 1) An overview of current and completed projects from the Netherlands Polar Programme (NPP) and other Dutch projects in the Polar Regions; 2) Access to the data of research carried out by Dutch researchers in the Polar Regions; and, 3) Links to external sources of Polar research data. For more information about the NPDC and the services it may offer to the Dutch Polar research community see https://npdc.nl/npdc.",
+        "node_name": "Netherlands Polar Data Center (NPDC)",
+        "operational_status": "operational",
+        "date_operational": "2021-09-10T20:19:42.0Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NPDC.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CERP_SFWMD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.093124,
+          26.675292
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "CERP - South Florida Water Management District",
+        "description": "Metadata and data repository managed by the South Florida Water Management District (SFWMD) for environmental restoration projects supporting the Comprehensive Everglades Restoration Plan (CERP) and Restoration Coordination and Verification (RECOVER) programs.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/CERP_SFWMD.png",
+        "node_name": "CERP - South Florida Water Management District",
+        "date_operational": "2022-07-14T00:00:0.000Z",
+        "operational_status": "operational"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:DRP",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.271523,
+          43.723422
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Defense Resiliency Platform Against Extreme Cold Weather",
+        "description": "The Defense Resiliency Platform (DRP) is a research-based multidisciplinary cyberinfrastructure platform enabling data integration and formatting, visualization, predictive analytics, and automated mapping of Arctic terrain data with the goal of maximizing the performance of the U.S. Army/CRREL in extreme cold weather environments.",
+        "operational_status": "operational",
+        "date_operational": "2023-08-25T21:14:06+00:00",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DRP.png",
+        "node_name": "Defense Resiliency Platform Against Extreme Cold Weather"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:HAKAI_IYS",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -125.22231,
+          50.113451
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "International Year of the Salmon Catalogue",
+        "description": "The repository contains data collected and rescued by the International Year of the Salmon project facilitated by the North Pacific Anadromous Fish Commission. The repository primarily contains physical and biogeochemical oceanographic data and fisheries trawl catch data describing salmon abundance and environmental conditions in the North Pacific Ocean collected from research expeditions in 2019, 2020, and 2022.",
+        "date_operational": "2022-08-08T00:00:0.000Z",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/HAKAI_IYS.png",
+        "node_name": "International Year of the Salmon Catalogue",
+        "operational_status": "operational"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SCTLD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.166417,
+          25.848528
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Stony Coral Tissue Loss Disease (SCTLD) Research Data Portal",
+        "description": "The SCTLD portal is a searchable inventory of existing SCTLD information related to research, surveillance, and intervention activities conducted for each susceptible species.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SCTLD.png",
+        "node_name": "Stony Coral Tissue Loss Disease (SCTLD) Research Data Portal",
+        "operational_status": "operational",
+        "date_operational": "2023-01-27T00:00:00"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SFWMD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.093124,
+          26.675292
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "South Florida Water Management District (SFWMD)",
+        "description": "Metadata and data repository for South Florida Water Management District (SFWMD) environmental restoration and research projects.",
+        "operational_status": "operational",
+        "date_operational": "2023-08-25T21:14:41+00:00",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CERP_SFWMD.png",
+        "node_name": "South Florida Water Management District (SFWMD)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CANWIN",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.135794,
+          49.811723
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Canadian Watershed Information Network (CanWIN)",
+        "description": "The Canadian Watershed Information Network (CanWIN) is a Canadian spatial data research infrastructure (SDRI) system hosted at the University of Manitoba and managed by the Centre for Earth Observation Science within the Clayton H. Riddell Faculty of Environment, Earth and Resources. We support research and education, and inform management, policy and evidence based decision making within the Nelson River Watershed and into the Arctic via Hudson Bay. By creating an interoperable infrastructure, CanWIN facilitates the discoverability and accessibility of water and climate related data across the freshwater-marine spectrum.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CANWIN.png",
+        "node_name": "Canadian Watershed Information Network (CanWIN)",
+        "operational_status": "upcoming"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:OPENTOPO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.239807,
+          32.884356
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "OpenTopography",
+        "description": "OpenTopography facilitates efficient access to topography data, tools, and resources to advance our understanding of the Earth\u2019s surface, vegetation, and built environment.",
+        "operational_status": "operational",
+        "node_name": "OpenTopography",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OPENTOPO.png",
+        "date_operational": "2023-10-12T12:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:BOREALIS",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.39533,
+          43.662728
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Borealis",
+        "description": "Borealis, the Canadian Dataverse Repository, is a bilingual, multidisciplinary, secure, Canadian research data repository, supported by academic libraries and research institutions across Canada. Borealis supports open discovery, management, sharing, and preservation of Canadian research data.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BOREALIS.png",
+        "operational_status": "operational",
+        "node_name": "Borealis",
+        "date_operational": "2024-01-24T18:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:HD",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.118336,
+          42.374453
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Harvard Dataverse",
+        "description": "The Harvard Dataverse Repository is a free data repository open to all researchers from any discipline, both inside and outside of the Harvard community, where you can share, archive, cite, access, and explore research data. Each individual Dataverse collection is a customizable collection of datasets (or a virtual repository) for organizing, managing, and showcasing datasets.",
+        "node_name": "Harvard Dataverse",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/HD.png",
+        "operational_status": "operational",
+        "date_operational": "2023-12-10T00:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NSIDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.252748,
+          40.012622
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "National Snow and Ice Data Center (NSIDC)",
+        "description": "Through a unique combination of data management and scientific research, NSIDC enables scientists, educators, students, journalists and many others to better understand the cryosphere, why it\u2019s important and how it\u2019s changing.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NSIDC.png",
+        "node_name": "National Snow and Ice Data Center (NSIDC)",
+        "operational_status": "operational",
+        "date_operational": "2023-12-04T00:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:DVNO",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.973698,
+          69.681065
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "DataverseNO",
+        "description": "DataverseNO (<a href='https://dataverse.no/' target='_blank'>https://dataverse.no/</a>) is a national, generic repository for open research data, owned and operated by UiT The Arctic University of Norway.",
+        "operational_status": "operational",
+        "node_name": "DataverseNO",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DVNO.png",
+        "date_operational": "2024-07-29T16:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SI",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.025973,
+          38.888775
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Smithsonian Research Data Repository",
+        "description": "The Smithsonian Research Data Repository is intended to facilitate open and discoverable reuse of Smithsonian research data products.",
+        "date_operational": "2024-04-25T21:14:41+00:00",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SI.png",
+        "node_name": "Smithsonian Research Data Repository",
+        "operational_status": "operational"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:GEM",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.102448,
+          55.692647
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Greenland Ecosystem Monitoring",
+        "description": "Greenland Ecosystem Monitoring (GEM) is an integrated monitoring and long-term research programme on ecosystems and climate change effects and feedbacks in the Arctic. Since 1995 the programme has established a coherent and integrated understanding of the functioning of ecosystems in a highly variable climate, which is based upon a comprehensive, long-term inter-disciplinary data collection carried out by Danish and Greenlandic monitoring and research institutions.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GEM.png",
+        "node_name": "Greenland Ecosystem Monitoring",
+        "operational_status": "operational",
+        "date_operational": "2024-05-07T21:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:CIB",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.269806,
+          37.881871
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "California Institute of Biodiversity",
+        "description": "The California Institute for Biodiversity (CIB) Data Repository is intended to preserve and share critical biodiversity data collected by CIB grantees and to support efforts to understand and sustain the great diversity of life in California.",
+        "node_name": "California Institute for Biodiversity",
+        "operational_status": "operational",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CIB.png",
+        "date_operational": "2025-03-27T22:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:ISRIC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6664,
+          51.9875
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "ISRIC \u2013 World Soil Information",
+        "description": "ISRIC \u2013 World Soil Information is an independent foundation with a mission to serve the international community as a custodian of global soil information. We support soil data, information and knowledge provisioning at global, national and sub-national levels for application into sustainable management of soil and land.",
+        "node_name": "ISRIC \u2013 World Soil Information",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ISRIC.png",
+        "operational_status": "operational",
+        "date_operational": "2025-02-07T22:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SNAP",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.8509,
+          64.8595
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Scenarios Network for Alaska + Arctic Planning (SNAP)",
+        "description": "Since 2007, our team of boreal ecologists, modelers, and science communicators has used climate data to create and share ideas of how a future Northern climate could look. We collaborate with University researchers, agencies, and communities to produce climate data products tailored to Alaska and western Canada.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SNAP.png",
+        "date_operational": "2025-04-15T17:00:00Z",
+        "operational_status": "operational",
+        "node_name": "Scenarios Network for Alaska + Arctic Planning (SNAP)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:BONARES",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.11291,
+          52.51594
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "BonaRes Repository",
+        "description": "The BonaRes Repository provides soil, agriculture and ecology research data. Agricultural and soil research (meta)data following the most important community standards, are quality assured, are open and mostly have geospatial information, are visible and findable by map services, and metadata are harvestable.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BONARES.png",
+        "operational_status": "upcoming",
+        "node_name": "BonaRes Repository"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:OBIS_SEAMAP",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.94423,
+          36.00016
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "OBIS-SEAMAP",
+        "description": "OBIS-SEAMAP helps quantify the global patterns of marine species distributions & biodiversity to improve our understanding of the ecology of marine mammals, seabirds, sea turtles and rays & sharks, and to support worldwide conservation efforts.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OBIS_SEAMAP.png",
+        "node_name": "OBIS-SEAMAP",
+        "operational_status": "operational",
+        "date_operational": "2025-08-28T12:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:GEUS",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.582,
+          55.689
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "GEUS Dataverse",
+        "description": "An open data repository for scientists from the Geological Survey of Denmark and Greenland (GEUS) to share and preserve their data.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GEUS.png",
+        "node_name": "GEUS Dataverse",
+        "operational_status": "operational",
+        "date_operational": "2025-06-10T12:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:FWC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.6336,
+          27.7615
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Florida Fish and Wildlife Conservation Commission",
+        "description": "The Florida Fish and Wildlife Conservation Commission'\u0092s (FWC) repository enables the documenting, preserving, and sharing of our research data. Our goal is to provide information for scientifically-based decisions and to protect, conserve, and manage Florida's fish and wildlife resources.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/FWC.png",
+        "operational_status": "operational",
+        "node_name": "Florida Fish and Wildlife Conservation Commission",
+        "date_operational": "2025-08-20T12:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:SDR",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5,
+          39.5
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Seafloor Data Repository",
+        "description": "The purpose of the Seafloor Data Repository is to catalog and make available seafloor datasets in U.S. Atlantic waters collected by a variety of entities and purposes that can eventually be used to develop regional-scale seafloor habitat data products (e.g., bathymetry maps, benthic habitat maps, surficial seafloor geology maps) for wider use and dissemination via the <a href=\"https://portal.midatlanticocean.org/\" target=\"_blank\">Mid-Atlantic Ocean Data Portal</a> and <a href=\"https://portal.northeastoceandata.org/\" target=\"_blank\">Northeast Ocean Data Portal</a>, and other mapping platforms.",
+        "date_operational": "2025-09-12T19:30:00Z",
+        "operational_status": "operational",
+        "node_name": "Seafloor Data Repository",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SDR.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:OBIS",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.93,
+          51.233
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "OBIS",
+        "description": "To build and maintain a global alliance that collaborates with scientific communities to facilitate free and open access to, and application of, biodiversity and biogeographic data and information on marine life.",
+        "node_name": "Ocean Biodiversity Information System (OBIS)",
+        "operational_status": "operational",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OBIS.png",
+        "date_operational": "2025-09-15T19:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:NORDICANA_D",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.27937,
+          46.78015
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Nordicana D",
+        "description": "The Nordicana collection, published by the Universit\u00e9 Laval Centre for Northern Studies (CEN) since 1964, allows the dissemination of works of Nordic interest such as symposium proceedings, lexicons, monographs, essays or theses. To cope with the increasing amount of data generated by CEN's work and to meet the growing demand for access to it, CEN has set up the Nordicana D collection.",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NORDICANA_D.png",
+        "operational_status": "operational",
+        "node_name": "Nordicana D",
+        "date_operational": "2025-09-16T20:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "urn:node:PDC",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.544836,
+          43.472352
+        ]
+      },
+      "properties": {
+        "type": "mn",
+        "state": "up",
+        "name": "Polar Data Catalogue",
+        "description": "The Arctic and Antarctic metadata and data repository for Canada",
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PDC.png",
+        "operational_status": "operational",
+        "node_name": "Polar Data Catalogue",
+        "date_operational": "2026-04-17T20:00:00Z"
+      }
+    }
+  ]
+}
