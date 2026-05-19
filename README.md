@@ -10,22 +10,23 @@ This tool is run by a Github action on a regular basis. The output is available 
 * [JSON Report](https://raw.githubusercontent.com/datadavev/mnstatus/main/data/node_status.json)
 * [CSV Extract](https://raw.githubusercontent.com/datadavev/mnstatus/main/data/node_status.csv)
 * [Vew CSV](https://flatgithub.com/datadavev/mnstatus?filename=data%2Fnode_status.csv)
+* [GeoJSON Node Map](https://raw.githubusercontent.com/datadavev/mnstatus/main/data/nodes.geojson)
 
 ## Installation
 
-Simplest is to install using [`pipx`](https://github.com/pipxproject/pipx):
+Simplest is to install using [`uv`](https://docs.astral.sh/uv/concepts/tools/):
 
 ```
-pipx install git+https://github.com/datadavev/mnstatus
+uv tool install git+https://github.com/datadavev/mnstatus
 ```
 
 A development install can be made using Poetry:
 
 ```
-mkvirtualenv mnstatus
 git clone https://github.com/datadavev/mnstatus.git
 cd mnstatus
-poetry install
+uv sync
+uv run mnstatus
 ```
 
 ## Operation
@@ -41,8 +42,10 @@ Options:
   --help                Show this message and exit.
 
 Commands:
-  nids  List nodes from CN node list
-  node  Check node status
+  2csv    JSON report to CSV
+  geojson Generate nodes GeoJSON
+  nids    List nodes from CN node list
+  node    Check node status
 ```
 
 To check a single member node, use the `node` operation:
@@ -206,3 +209,8 @@ jq -r '.[] | '\
 "urn:node:CA_OPC",200,3892,3699,457
 ```
 
+Use the `geojson` command to generate a geojson representation of the nodes. The output is sent to `stdout`, so redirected to a file for persistence, e.g.:
+
+```
+mnstatus geojson > nodes.geojson
+```
