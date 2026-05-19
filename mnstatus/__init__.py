@@ -1,20 +1,20 @@
-import logging
-import logging.handlers
-import time
-import datetime
-import json
 import asyncio
 import concurrent.futures
+import datetime
+import json
+import logging
+import logging.handlers
 import socket
+import time
 import urllib.parse
-import urllib3
-import requests
+
 import dateparser
+import requests
+import urllib3
 import xmltodict
 
-
 MAXIMUM_CONCURRENCY = 12
-"""Maximum number of concurrent tasks. 
+"""Maximum number of concurrent tasks.
 """
 
 MAXIMUM_INDEX_TASKS = 5
@@ -63,7 +63,7 @@ def getLogger():
 def escapeSolrQueryTerm(term):
     term = term.replace("\\", "\\\\")
     for c in SOLR_RESERVED_CHAR_LIST:
-        term = term.replace(c, "\{}".format(c))
+        term = term.replace(c, "{}".format(c))
     return term
 
 
@@ -200,7 +200,14 @@ class ObjectList:
 
 class MNStatus(object):
     def __init__(
-        self, node_id, base_url, cn_url, solr_url, version=2, timeout=HTTP_TIMEOUT, software_version=None,
+        self,
+        node_id,
+        base_url,
+        cn_url,
+        solr_url,
+        version=2,
+        timeout=HTTP_TIMEOUT,
+        software_version=None,
     ):
         self.node_id = node_id
         self.base_url = base_url
@@ -625,7 +632,7 @@ class NodeList(object):
             solr_url,
             version=version,
             timeout=timeout,
-            software_version=self.nodeSoftwareVersion(node_id)
+            software_version=self.nodeSoftwareVersion(node_id),
         )
 
     def setStatusInfo(self, node_id, task, info):
