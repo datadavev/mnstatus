@@ -132,13 +132,13 @@ class ObjectList:
         self._started = False
         self._session = requests.Session()
 
-    def __iter__(self):
+    def __iter__(self) -> "ObjectList":
         return self
 
-    def __len__(self):
+    def __len__(self) -> int:
         return self._total_records
 
-    def __next__(self):
+    def __next__(self) -> dict[str, typing.Any]:
         _L = getLogger()
         if not self._started:
             _L.debug("Starting object iteration")
@@ -195,22 +195,22 @@ class ObjectList:
                     ),
                     "size": int(entry["size"]),
                 }
+                self._cpage.append(r)
             except Exception as e:
                 _L.error("ERROR converting record: %s", e)
-            self._cpage.append(r)
         self._page_offset = 0
 
 
-class MNStatus(object):
+class MNStatus:
     def __init__(
         self,
-        node_id,
-        base_url,
-        cn_url,
-        solr_url,
-        version=2,
-        timeout=HTTP_TIMEOUT,
-        software_version=None,
+        node_id: str,
+        base_url: str,
+        cn_url: str,
+        solr_url: str,
+        version: int = 2,
+        timeout: float = HTTP_TIMEOUT,
+        software_version: str | None = None,
     ):
         self.node_id = node_id
         self.base_url = base_url
@@ -542,7 +542,7 @@ def runCheck(node, task):
     return (node.node_id, task, res)
 
 
-class NodeList(object):
+class NodeList:
     def __init__(self, base_url="https://cn.dataone.org/cn"):
         self.base_url = base_url
         if not self.base_url[-1] == "/":
@@ -561,6 +561,50 @@ class NodeList(object):
             "node"
         ].copy()
         return self._nodes
+
+    def getDisplayInfo(self) -> dict[str, dict]:
+        _L = getLogger()
+        self._ensureNodes()
+        data = {}
+        for n in self.nodes():
+            nodeid = n["identifier"]
+            properties = {}
+            point = []
+            properties["type"] = n["@type"]
+            properties["state"] = n["@state"]
+            properties["name"] = n["name"]
+            properties["description"] = n["description"]
+            for property in n.get("property", []):
+                k = property.get("@key", None)
+                v = property.get("#text", "")
+                match k:
+                    case "CN_location_lonlat":
+                        try:
+                            parts = v.split(",")
+                            if len(parts) != 2:
+                                raise ValueError(f"CN_location_lonlat: {v}")
+                            point = (
+                                float(parts[0]),
+                                float(parts[1]),
+                            )
+                        except KeyError:
+                            _L.warning("Node %s has no CN_location_lonlat", nodeid)
+                        except ValueError as e:
+                            _L.warning(
+                                "Node %s has malformed CN_location_lonlat: %s",
+                                n["identifier"],
+                                e,
+                            )
+                    case "CN_node_name":
+                        properties["node_name"] = v
+                    case "CN_logo_url":
+                        properties["logo_url"] = v
+                    case "CN_operational_status":
+                        properties["operational_status"] = v
+                    case "CN_date_operational":
+                        properties["date_operational"] = v
+            data[nodeid] = {"properties": properties, "location": point}
+        return data
 
     def nodes(self):
         self._ensureNodes()
@@ -606,10 +650,10 @@ class NodeList(object):
         return None
 
     def nodeServiceVersion(self, node_id, service="MNRead"):
+        _version = 0
         n = self.node(node_id)
         if n is None:
-            return None
-        _version = 0
+            return _version
         for svc in n["services"].get("service", []):
             if svc["@name"] == service:
                 v = svc["@version"]
