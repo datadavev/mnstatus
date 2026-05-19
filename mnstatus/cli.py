@@ -1,11 +1,13 @@
-import sys
-import os
+import csv
+import json
 import logging
 import logging.handlers
 import multiprocessing
+import os
+import sys
+
 import click
-import json
-import csv
+
 import mnstatus
 
 LOG_LEVELS = {
@@ -212,6 +214,31 @@ def checkNode(ctx, node_id, timeout, tests):
     mn = cn.node(node_id)
     print(mnstatus.jsonDumps(mn["status"]))
     return 0
+
+
+@main.command("geojson", short_help="Generate nodes GeoJSON")
+@click.option("-n", "--n_type", default=None, help="Specify node type, mn or cn")
+@click.option(
+    "-s", "--state", "n_state", default=None, help="Specify node state, up or down"
+)
+@click.pass_context
+def generate_geojson(ctx, n_type: str | None, n_state: str | None):
+    _L = mnstatus.getLogger()
+    if n_type is not None:
+        n_type = n_type.lower()
+    if n_type not in [None, "cn", "mn"]:
+        _L.error("Expecting 'mn' or 'cn' for the node type")
+        return 1
+    if n_state is not None:
+        n_state = n_state.lower()
+    if n_state not in [None, "up", "down"]:
+        _L.error("Expecting node state to be 'up' or 'down'")
+        return 1
+    cn = mnstatus.NodeList(base_url=ctx.obj["cnode_url"])
+    cn.filterNodeState(n_state)
+    cn.filterNodeType(n_type)
+    data = cn.getDisplayInfo()
+    print(json.dumps(data, indent=2))
 
 
 @main.command("2csv", short_help="JSON report to CSV")
