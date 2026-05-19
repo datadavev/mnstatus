@@ -2,11 +2,11 @@ import csv
 import json
 import logging
 import logging.handlers
-import multiprocessing
 import os
 import sys
 
 import click
+import geojson
 
 import mnstatus
 
@@ -238,7 +238,17 @@ def generate_geojson(ctx, n_type: str | None, n_state: str | None):
     cn.filterNodeState(n_state)
     cn.filterNodeType(n_type)
     data = cn.getDisplayInfo()
-    print(json.dumps(data, indent=2))
+    features = []
+    for k, v in data.items():
+        if len(v["location"]) == 2:
+            feature = geojson.Feature(
+                id=k,
+                geometry=geojson.Point(v["location"]),
+                properties=v["properties"],
+            )
+            features.append(feature)
+    feature_collection = geojson.FeatureCollection(features)
+    print(json.dumps(feature_collection, indent=2))
 
 
 @main.command("2csv", short_help="JSON report to CSV")

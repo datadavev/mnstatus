@@ -568,11 +568,12 @@ class NodeList:
         data = {}
         for n in self.nodes():
             nodeid = n["identifier"]
-            data[nodeid] = {}
-            data[nodeid]["type"] = n["@type"]
-            data[nodeid]["state"] = n["@state"]
-            data[nodeid]["name"] = n["name"]
-            data[nodeid]["description"] = n["description"]
+            properties = {}
+            point = []
+            properties["type"] = n["@type"]
+            properties["state"] = n["@state"]
+            properties["name"] = n["name"]
+            properties["description"] = n["description"]
             for property in n.get("property", []):
                 k = property.get("@key", None)
                 v = property.get("#text", "")
@@ -582,10 +583,10 @@ class NodeList:
                             parts = v.split(",")
                             if len(parts) != 2:
                                 raise ValueError(f"CN_location_lonlat: {v}")
-                            data[nodeid]["location"] = {
-                                "longitude": float(parts[0]),
-                                "latitude": float(parts[1]),
-                            }
+                            point = (
+                                float(parts[0]),
+                                float(parts[1]),
+                            )
                         except KeyError:
                             _L.warning("Node %s has no CN_location_lonlat", nodeid)
                         except ValueError as e:
@@ -595,13 +596,14 @@ class NodeList:
                                 e,
                             )
                     case "CN_node_name":
-                        data[nodeid]["node_name"] = v
+                        properties["node_name"] = v
                     case "CN_logo_url":
-                        data[nodeid]["logo_url"] = v
+                        properties["logo_url"] = v
                     case "CN_operational_status":
-                        data[nodeid]["operational_status"] = v
+                        properties["operational_status"] = v
                     case "CN_date_operational":
-                        data[nodeid]["date_operational"] = v
+                        properties["date_operational"] = v
+            data[nodeid] = {"properties": properties, "location": point}
         return data
 
     def nodes(self):
