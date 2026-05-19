@@ -6,6 +6,7 @@ import logging
 import logging.handlers
 import socket
 import time
+import typing
 import urllib.parse
 
 import dateparser
@@ -60,30 +61,30 @@ def getLogger():
     return logging.getLogger("mnstatus")
 
 
-def escapeSolrQueryTerm(term):
+def escapeSolrQueryTerm(term: str) -> str:
     term = term.replace("\\", "\\\\")
     for c in SOLR_RESERVED_CHAR_LIST:
-        term = term.replace(c, "{}".format(c))
+        term = term.replace(c, "\\{}".format(c))
     return term
 
 
-def dtToDataONETime(dt):
+def dtToDataONETime(dt: datetime.datetime) -> str:
     dt1 = dt.astimezone(datetime.timezone.utc)
     return dt1.strftime(DATAONE_TIME_FORMAT)
 
 
-def dtnow():
+def dtnow() -> datetime.datetime:
     """Get datetime for now in UTC timezone."""
     return datetime.datetime.now(datetime.timezone.utc)
 
 
-def datetimeFromString(v):
+def datetimeFromString(v: str) -> datetime.datetime | None:
     return dateparser.parse(
         v, settings={"TIMEZONE": "+0000", "RETURN_AS_TIMEZONE_AWARE": True}
     )
 
 
-def datetimeToJsonStr(dt):
+def datetimeToJsonStr(dt: datetime.datetime | None) -> str | None:
     """Convert datetime to a JSON compatible string"""
     if dt is None:
         return None
@@ -99,20 +100,22 @@ def _jsonConverter(o):
     return o.__str__()
 
 
-def jsonDumps(obj):
+def jsonDumps(obj: typing.Any) -> str:
     """Dump object as JSON, handling date conversion"""
     return json.dumps(obj, indent=2, default=_jsonConverter, sort_keys=True)
 
 
 class ObjectList:
+    """Implements a pager for the getObjects() DataONE API."""
+
     def __init__(
         self,
-        lo_url,
-        offset=0,
-        max_entries=-1,
-        from_date=None,
-        to_date=None,
-        page_size=1000,
+        lo_url: str,
+        offset: int = 0,
+        max_entries: int = -1,
+        from_date: datetime.datetime | None = None,
+        to_date: datetime.datetime | None = None,
+        page_size: int = 1000,
     ):
         self._url = lo_url
         self._start_offset = offset
@@ -164,13 +167,13 @@ class ObjectList:
 
     def _getPage(self):
         _L = getLogger()
-        params = {
+        params: dict[str, int | str] = {
             "start": self._coffset,
             "count": self._page_size,
         }
-        if not self._from_date is None:
+        if self._from_date is not None:
             params["fromDate"] = dtToDataONETime(self._from_date)
-        if not self._to_date is None:
+        if self._to_date is not None:
             params["toDate"] = dtToDataONETime(self._to_date)
         _L.debug("request params: %s", params)
         response = self._session.get(self._url, params=params)
@@ -323,7 +326,7 @@ class MNStatus(object):
         _L = getLogger()
         _L.info("%s %s grok date range", task_name, self.node_id)
         y_max = dtnow().year
-        y_start = datetimeFromString(f"2012-01-01")
+        y_start = datetimeFromString("2012-01-01")
         d_delta = 180
         _found = False
         results = {}
@@ -485,6 +488,7 @@ class MNStatus(object):
         t0 = time.time()
         _L.info("index %s %s", self.node_id, self.solr_url)
         response = session.get(self.solr_url, params=params, timeout=self.timeout)
+        response.raise_for_status()
         try:
             res_1 = json.loads(response.text)
         except json.decoder.JSONDecodeError as e:
@@ -543,11 +547,11 @@ class NodeList(object):
         self.base_url = base_url
         if not self.base_url[-1] == "/":
             self.base_url = self.base_url + "/"
-        self._nodes = None
+        self._nodes = []
 
     def _ensureNodes(self):
         _L = getLogger()
-        if self._nodes is not None:
+        if len(self._nodes) > 0:
             return
         _L.info("Loading node list")
         url = urllib.parse.urljoin(self.base_url, "v2/node")
