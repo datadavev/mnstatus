@@ -12,6 +12,11 @@ This tool is run by a Github action on a regular basis. The output is available 
 * [Vew CSV](https://flatgithub.com/datadavev/mnstatus?filename=data%2Fnode_status.csv)
 * [GeoJSON Node Map](https://raw.githubusercontent.com/datadavev/mnstatus/main/data/nodes.geojson)
 
+View the GeoJSON node map:
+
+- [Using leaflet](https://datadavev.github.io/mnstatus/index.html) ([source](https://github.com/datadavev/mnstatus/blob/main/docs/index.html))
+- [Using CesiumJS](https://datadavev.github.io/mnstatus/index_cesium.html) ([source](https://github.com/datadavev/mnstatus/blob/main/docs/index_cesium.html))
+
 ## Installation
 
 Simplest is to install using [`uv`](https://docs.astral.sh/uv/concepts/tools/):
