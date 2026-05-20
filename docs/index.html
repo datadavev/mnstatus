@@ -89,6 +89,14 @@
                         // Bbind a popup to each point feature
                         onEachFeature: function (feature, layer) {
                             if (feature.properties) {
+                                // If a 'name' property exists, display it on hover
+                                if (feature.properties.name) {
+                                    layer.bindTooltip(feature.properties.name, {
+                                        sticky: true, // The tooltip follows the user's mouse pointer
+                                        direction: "top", // Positioned just above the circle marker
+                                        offset: [0, -5], // Slightly offset upward so it doesn't overlap the dot
+                                    });
+                                }
                                 let popupContent =
                                     "<strong>Node Properties:</strong><br><hr>";
                                 for (const [key, value] of Object.entries(
@@ -97,6 +105,15 @@
                                     popupContent += `<strong>${key}:</strong> ${value}<br>`;
                                 }
                                 layer.bindPopup(popupContent);
+
+                                // --- MOUSE CURSOR INTERACTIVITY ---
+                                // Change cursor to pointer on hover so users know it can be clicked
+                                layer.on({
+                                    mouseover: function (e) {
+                                        const el = e.target.getElement();
+                                        if (el) el.style.cursor = "pointer";
+                                    },
+                                });
                             }
                         },
                         // Customize point markers conditionally based on properties
