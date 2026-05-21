@@ -261,9 +261,9 @@
       },
       "properties": {
         "type": "mn",
-        "state": "up",
+        "state": "down",
         "name": "DataONE UNM Dedicated Replica Server",
-        "description": "A server that provides replica storage across the DataONE Network for all participating institutions",
+        "description": "A server that provides replica storage across the DataONE Network for all participating institutions.",
         "operational_status": "replicator",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "DataONE UNM Dedicated Replica Server"
@@ -1121,9 +1121,9 @@
       "properties": {
         "type": "mn",
         "state": "up",
-        "name": "IEDA MGDL",
-        "description": "The Marine Geoscience Digital Library (MGDL) is funded by the US National Science Foundation to provide data preservation, publication, and access services for the marine geoscience research community. Data management services are provided for geological and geophysical field data acquired with ships, towed platforms and submersibles and associated science products.",
-        "node_name": "IEDA: Marine-Geo Digital Library",
+        "name": "Marine Geoscience Data System",
+        "description": "The Marine Geoscience Data System (MGDS) is funded by the US National Science Foundation to provide data preservation, publication, and access services for the marine geoscience research community. Data management services are provided for geological and geophysical field data acquired with ships, towed platforms and submersibles and associated science products.",
+        "node_name": "Marine Geoscience Data System",
         "operational_status": "operational",
         "date_operational": "2019-03-04T23:50:00.000Z",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_MGDL.png"
