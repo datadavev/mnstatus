@@ -261,7 +261,7 @@
       },
       "properties": {
         "type": "mn",
-        "state": "down",
+        "state": "up",
         "name": "DataONE UNM Dedicated Replica Server",
         "description": "A server that provides replica storage across the DataONE Network for all participating institutions.",
         "operational_status": "replicator",
