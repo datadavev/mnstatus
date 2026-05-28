@@ -79,7 +79,18 @@
         "operational_status": "operational",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "Knowledge Network for Biocomplexity",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/KNB.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/KNB.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.4264061450958252,
+        "mn_count": 312808,
+        "mn_earliest": "2012-06-14T03:48:31+0000",
+        "mn_latest": "2026-05-26T17:26:34+0000",
+        "cn_count": 65882,
+        "cn_earliest": "2012-06-14T03:48:31+0000",
+        "cn_latest": "2026-05-26T17:26:34+0000",
+        "index_count": 44318,
+        "index_earliest": "2012-06-14T03:48:31.183Z",
+        "index_latest": "2026-05-26T17:26:34.43Z"
       }
     },
     {
@@ -100,7 +111,18 @@
         "operational_status": "operational",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "ESA Data Registry",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ESA.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ESA.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.3867616653442383,
+        "mn_count": 253,
+        "mn_earliest": "2013-03-01T23:51:11+0000",
+        "mn_latest": "2015-01-06T12:37:08+0000",
+        "cn_count": 253,
+        "cn_earliest": "2013-03-01T23:51:11+0000",
+        "cn_latest": "2015-01-06T12:37:08+0000",
+        "index_count": 157,
+        "index_earliest": "2013-12-21T23:30:14.304Z",
+        "index_latest": "2015-01-06T12:37:08.039Z"
       }
     },
     {
@@ -121,7 +143,18 @@
         "operational_status": "operational",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "SANParks Data Repository",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SANPARKS.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SANPARKS.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 5.175130367279053,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 6418,
+        "cn_earliest": "2012-06-28T20:19:49+0000",
+        "cn_latest": "2020-03-11T12:08:46+0000",
+        "index_count": 3725,
+        "index_earliest": "2012-06-15T01:15:28.699Z",
+        "index_latest": "2017-04-20T10:46:47.344Z"
       }
     },
     {
@@ -163,7 +196,18 @@
         "operational_status": "operational",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "LTER Network Member Node",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/LTER.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/LTER.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2901315689086914,
+        "mn_count": 508693,
+        "mn_earliest": "2012-06-26T07:33:40+0000",
+        "mn_latest": "2026-05-28T00:45:08+0000",
+        "cn_count": 520420,
+        "cn_earliest": "2012-06-26T07:33:12+0000",
+        "cn_latest": "2026-05-28T00:45:08+0000",
+        "index_count": 438863,
+        "index_earliest": "2012-06-26T07:34:58.993Z",
+        "index_latest": "2026-05-27T16:45:14.864Z"
       }
     },
     {
@@ -184,7 +228,18 @@
         "operational_status": "operational",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "Merritt Repository",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CDL.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CDL.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 0.18154525756835938,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 242115,
+        "cn_earliest": "2012-08-12T04:11:32+0000",
+        "cn_latest": "2020-03-11T12:07:03+0000",
+        "index_count": 158007,
+        "index_earliest": "2012-08-12T04:11:32.659Z",
+        "index_latest": "2014-12-14T23:00:13.344Z"
       }
     },
     {
@@ -205,7 +260,18 @@
         "operational_status": "operational",
         "date_operational": "2012-07-23T00:00:0.000Z",
         "node_name": "PISCO MN",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PISCO.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PISCO.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.5085101127624512,
+        "mn_count": 187597,
+        "mn_earliest": null,
+        "mn_latest": "2026-01-16T00:18:44+0000",
+        "cn_count": 187536,
+        "cn_earliest": "2012-08-24T10:00:30+0000",
+        "cn_latest": "2026-01-16T00:18:44+0000",
+        "index_count": 178810,
+        "index_earliest": "2012-07-10T19:23:00.958Z",
+        "index_latest": "2026-01-16T00:18:41.187Z"
       }
     },
     {
@@ -226,7 +292,18 @@
         "operational_status": "operational",
         "date_operational": "2012-10-02T00:00:0.000Z",
         "node_name": "ONEShare Repository",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ONEShare.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ONEShare.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 5.1696507930755615,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 1993,
+        "cn_earliest": "2013-01-03T23:00:02+0000",
+        "cn_latest": "2020-07-31T15:47:52+0000",
+        "index_count": 474,
+        "index_earliest": "2013-01-03T23:00:02.364Z",
+        "index_latest": "2020-07-31T15:47:52.492Z"
       }
     },
     {
@@ -246,7 +323,18 @@
         "description": "A server that provides replica storage across the DataONE Network for all participating institutions",
         "operational_status": "replicator",
         "date_operational": "2012-07-23T00:00:0.000Z",
-        "node_name": "DataONE ORC Dedicated Replica Server"
+        "node_name": "DataONE ORC Dedicated Replica Server",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.5202984809875488,
+        "mn_count": 83778,
+        "mn_earliest": "2013-11-14T14:27:03+0000",
+        "mn_latest": "2026-05-21T15:00:39+0000",
+        "cn_count": 0,
+        "cn_earliest": null,
+        "cn_latest": null,
+        "index_count": 0,
+        "index_earliest": null,
+        "index_latest": null
       }
     },
     {
@@ -266,7 +354,18 @@
         "description": "A server that provides replica storage across the DataONE Network for all participating institutions.",
         "operational_status": "replicator",
         "date_operational": "2012-07-23T00:00:0.000Z",
-        "node_name": "DataONE UNM Dedicated Replica Server"
+        "node_name": "DataONE UNM Dedicated Replica Server",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.24367094039916992,
+        "mn_count": 72357,
+        "mn_earliest": "2013-11-14T14:00:12+0000",
+        "mn_latest": "2026-05-19T02:45:15+0000",
+        "cn_count": 0,
+        "cn_earliest": null,
+        "cn_latest": null,
+        "index_count": 0,
+        "index_earliest": null,
+        "index_latest": null
       }
     },
     {
@@ -286,7 +385,18 @@
         "description": "A server that provides replica storage across the DataONE Network for all participating institutions",
         "operational_status": "replicator",
         "date_operational": "2012-07-23T00:00:0.000Z",
-        "node_name": "DataONE UCSB Dedicated Replica Server"
+        "node_name": "DataONE UCSB Dedicated Replica Server",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.42337846755981445,
+        "mn_count": 86271,
+        "mn_earliest": "2013-11-14T14:00:12+0000",
+        "mn_latest": "2026-05-27T16:31:28+0000",
+        "cn_count": 1631,
+        "cn_earliest": "2020-08-05T23:42:30+0000",
+        "cn_latest": "2026-05-27T16:31:28+0000",
+        "index_count": 1215,
+        "index_earliest": "2020-08-05T23:42:30.986Z",
+        "index_latest": "2026-05-27T16:31:28.103Z"
       }
     },
     {
@@ -307,7 +417,18 @@
         "operational_status": "operational",
         "date_operational": "2013-06-18T00:00:0.000Z",
         "node_name": "Taiwan Forestry Research Institute",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TFRI.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TFRI.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 1.393620491027832,
+        "mn_count": 19241,
+        "mn_earliest": "2013-06-12T01:56:10+0000",
+        "mn_latest": "2026-05-27T04:11:06+0000",
+        "cn_count": 11869,
+        "cn_earliest": "2013-06-12T02:05:00+0000",
+        "cn_latest": "2022-10-14T03:05:55+0000",
+        "index_count": 6236,
+        "index_earliest": "2013-06-12T00:57:18.048Z",
+        "index_latest": "2022-10-14T03:05:32.289Z"
       }
     },
     {
@@ -349,7 +470,18 @@
         "operational_status": "operational",
         "date_operational": "2013-12-18T00:00:0.000Z",
         "node_name": "SEAD Virtual Archive",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SEAD.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SEAD.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 5.033576250076294,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 117,
+        "cn_earliest": "2015-06-16T01:19:15+0000",
+        "cn_latest": "2022-05-10T23:00:05+0000",
+        "index_count": 114,
+        "index_earliest": "2015-06-16T01:19:15.814Z",
+        "index_latest": "2022-05-10T23:00:05.918Z"
       }
     },
     {
@@ -370,7 +502,18 @@
         "operational_status": "operational",
         "date_operational": "2013-11-15T00:00:0.000Z",
         "node_name": "Gulf of Alaska Data Portal",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GOA.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GOA.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2980203628540039,
+        "mn_count": 3295,
+        "mn_earliest": "2013-11-06T15:13:39+0000",
+        "mn_latest": "2023-10-26T16:08:58+0000",
+        "cn_count": 3213,
+        "cn_earliest": "2014-03-05T22:13:13+0000",
+        "cn_latest": "2023-10-26T16:07:42+0000",
+        "index_count": 1690,
+        "index_earliest": "2014-03-05T19:26:04.186Z",
+        "index_latest": "2023-10-26T16:07:41.985Z"
       }
     },
     {
@@ -412,7 +555,18 @@
         "operational_status": "operational",
         "date_operational": "2014-06-18T00:00:0.000Z",
         "node_name": "Europe Long-Term Ecosystem Research Network (LTER Europe)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/LTER_EUROPE.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/LTER_EUROPE.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 5.288402080535889,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 343,
+        "cn_earliest": "2014-05-30T23:15:33+0000",
+        "cn_latest": "2016-01-14T09:06:57+0000",
+        "index_count": 343,
+        "index_earliest": "2014-05-30T23:15:33.237Z",
+        "index_latest": "2016-01-14T09:06:57.814Z"
       }
     },
     {
@@ -433,7 +587,18 @@
         "operational_status": "operational",
         "date_operational": "2014-02-22T00:00:0.000Z",
         "node_name": "Dryad Digital Repository",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DRYAD.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DRYAD.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.40671658515930176,
+        "mn_count": 123075,
+        "mn_earliest": null,
+        "mn_latest": "2026-05-26T03:15:07+0000",
+        "cn_count": 492131,
+        "cn_earliest": "2014-06-06T04:00:24+0000",
+        "cn_latest": "2026-05-26T03:15:07+0000",
+        "index_count": 77528,
+        "index_earliest": "2023-09-12T13:38:41Z",
+        "index_latest": "2026-05-26T03:15:07Z"
       }
     },
     {
@@ -475,7 +640,18 @@
         "operational_status": "operational",
         "date_operational": "2014-06-23T00:00:0.000Z",
         "node_name": "Earth Data Analysis Center (EDAC)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EDACGSTORE.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EDACGSTORE.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.6630489826202393,
+        "mn_count": 1075,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 1075,
+        "cn_earliest": "2014-06-04T01:02:10+0000",
+        "cn_latest": "2014-06-19T01:01:27+0000",
+        "index_count": 1067,
+        "index_earliest": "2014-06-04T01:01:11.14Z",
+        "index_latest": "2014-06-19T01:01:27.907Z"
       }
     },
     {
@@ -496,7 +672,18 @@
         "operational_status": "operational",
         "date_operational": "2014-08-13T00:00:0.000Z",
         "node_name": "Montana IoE Data Repository",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IOE.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IOE.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 0.5272622108459473,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 279,
+        "cn_earliest": "2014-08-13T18:51:12+0000",
+        "cn_latest": "2016-06-15T21:35:12+0000",
+        "index_count": 278,
+        "index_earliest": "2014-08-13T18:51:12.169Z",
+        "index_latest": "2016-06-15T21:35:12.872Z"
       }
     },
     {
@@ -517,7 +704,18 @@
         "operational_status": "operational",
         "date_operational": "2014-12-22T00:00:0.000Z",
         "node_name": "Minnesota Population Center (MPC)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/US_MPC.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/US_MPC.png",
+        "mn_http_status": 401,
+        "mn_http_elapsed": 0.63112473487854,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 1032,
+        "cn_earliest": "2014-12-16T22:42:31+0000",
+        "cn_latest": "2014-12-16T22:54:58+0000",
+        "index_count": 1032,
+        "index_earliest": "2014-12-16T22:42:07.21Z",
+        "index_latest": "2014-12-16T22:54:58.436Z"
       }
     },
     {
@@ -643,7 +841,18 @@
         "operational_status": "operational",
         "date_operational": "2015-06-23T00:00:0.000Z",
         "node_name": "TERN Australia",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TERN.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TERN.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 1.1095240116119385,
+        "mn_count": 14727,
+        "mn_earliest": null,
+        "mn_latest": "2019-03-02T06:02:58+0000",
+        "cn_count": 14632,
+        "cn_earliest": "2015-05-22T02:07:53+0000",
+        "cn_latest": "2019-06-21T07:13:58+0000",
+        "index_count": 14631,
+        "index_earliest": "2015-05-22T02:07:53.329Z",
+        "index_latest": "2019-06-21T07:13:58.711Z"
       }
     },
     {
@@ -664,7 +873,18 @@
         "operational_status": "operational",
         "date_operational": "2016-06-28T00:00:0.000Z",
         "node_name": "University of Idaho Research Computing and Data Services",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NKN.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NKN.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 5.0507214069366455,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 48,
+        "cn_earliest": "2015-05-30T21:33:49+0000",
+        "cn_latest": "2016-06-22T15:03:33+0000",
+        "index_count": 46,
+        "index_earliest": "2015-05-30T21:33:49.382Z",
+        "index_latest": "2016-06-22T15:03:33.789Z"
       }
     },
     {
@@ -685,7 +905,18 @@
         "operational_status": "operational",
         "date_operational": "2015-11-12T00:00:0.000Z",
         "node_name": "USGS Science Data Catalog",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/USGS_SDC.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/USGS_SDC.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 0.013393878936767578,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 40185,
+        "cn_earliest": "2015-10-27T12:44:08+0000",
+        "cn_latest": "2019-06-18T12:27:37+0000",
+        "index_count": 21984,
+        "index_earliest": "2015-11-04T16:25:52.31Z",
+        "index_latest": "2018-02-01T07:22:36.773Z"
       }
     },
     {
@@ -706,7 +937,18 @@
         "operational_status": "operational",
         "date_operational": "2015-12-21T00:00:0.000Z",
         "node_name": "Nevada Research Data Center",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NRDC.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NRDC.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 5.163569450378418,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 6673,
+        "cn_earliest": "2015-11-23T22:53:10+0000",
+        "cn_latest": "2018-04-06T18:37:01+0000",
+        "index_count": 6672,
+        "index_earliest": "2015-11-23T21:41:32.067Z",
+        "index_latest": "2018-04-06T18:37:01.89Z"
       }
     },
     {
@@ -727,7 +969,18 @@
         "operational_status": "operational",
         "date_operational": "2016-03-31T00:00:0.000Z",
         "node_name": "NOAA NCEI Environmental Data Archive",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NCEI.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NCEI.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.595156192779541,
+        "mn_count": 51001,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 50972,
+        "cn_earliest": "2016-04-17T07:00:07+0000",
+        "cn_latest": "2018-05-10T03:28:11+0000",
+        "index_count": 50967,
+        "index_earliest": "2016-03-24T21:15:29.816Z",
+        "index_latest": "2018-05-10T03:28:11.936Z"
       }
     },
     {
@@ -748,7 +1001,18 @@
         "operational_status": "operational",
         "date_operational": "2016-05-17T00:00:0.000Z",
         "node_name": "Programa de Pesquisa em Biodiversidade (PPBio)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PPBIO.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PPBIO.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 1.1486475467681885,
+        "mn_count": 8834,
+        "mn_earliest": "2023-01-04T20:25:35+0000",
+        "mn_latest": "2025-05-29T14:57:20+0000",
+        "cn_count": 4120,
+        "cn_earliest": "2013-04-04T21:48:05+0000",
+        "cn_latest": "2025-05-29T14:57:20+0000",
+        "index_count": 3654,
+        "index_earliest": "2014-06-18T14:39:46.838Z",
+        "index_latest": "2025-05-29T14:57:17.886Z"
       }
     },
     {
@@ -769,7 +1033,18 @@
         "operational_status": "operational",
         "date_operational": "2016-07-13T00:00:0.000Z",
         "node_name": "National Ecological Observatory Network",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NEON.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NEON.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 0.18005776405334473,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 24221,
+        "cn_earliest": "2016-07-08T18:04:50+0000",
+        "cn_latest": "2019-12-01T19:38:06+0000",
+        "index_count": 21692,
+        "index_earliest": "2019-07-03T21:32:09.984Z",
+        "index_latest": "2019-12-01T19:38:06.575Z"
       }
     },
     {
@@ -790,7 +1065,18 @@
         "operational_status": "operational",
         "date_operational": "2017-01-25T00:00:0.000Z",
         "node_name": "the Digital Archaeological Record",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TDAR.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/TDAR.png",
+        "mn_http_status": 403,
+        "mn_http_elapsed": 0.4311356544494629,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 76784,
+        "cn_earliest": "2011-12-19T20:47:44+0000",
+        "cn_latest": "2019-05-29T23:55:35+0000",
+        "index_count": 69052,
+        "index_earliest": "2009-05-14T16:14:44.15Z",
+        "index_latest": "2019-05-29T23:55:35.039Z"
       }
     },
     {
@@ -811,7 +1097,18 @@
         "operational_status": "operational",
         "date_operational": "2016-12-01T00:00:0.000Z",
         "node_name": "Arctic Data Center",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ARCTIC.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ARCTIC.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.303210973739624,
+        "mn_count": 1172895,
+        "mn_earliest": "2026-05-22T15:25:52+0000",
+        "mn_latest": "2026-05-28T10:32:26+0000",
+        "cn_count": 1164424,
+        "cn_earliest": "2015-05-08T21:43:57+0000",
+        "cn_latest": "2026-05-28T10:32:26+0000",
+        "index_count": 1015513,
+        "index_earliest": "2016-06-03T17:14:39.377Z",
+        "index_latest": "2026-05-27T19:31:28.136Z"
       }
     },
     {
@@ -832,7 +1129,18 @@
         "operational_status": "operational",
         "date_operational": "2016-11-29T00:00:0.000Z",
         "node_name": "Biological and Chemical Oceanography Data Management Office (BCO-DMO)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BCODMO.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BCODMO.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2537860870361328,
+        "mn_count": 23444,
+        "mn_earliest": "2021-07-17T21:14:41+0000",
+        "mn_latest": "2026-04-06T17:10:32+0000",
+        "cn_count": 22812,
+        "cn_earliest": "2016-11-13T20:48:43+0000",
+        "cn_latest": "2026-04-06T17:10:32+0000",
+        "index_count": 22698,
+        "index_earliest": "2016-11-13T20:48:43Z",
+        "index_latest": "2026-04-06T17:10:32Z"
       }
     },
     {
@@ -853,7 +1161,18 @@
         "operational_status": "operational",
         "date_operational": "2017-01-20T00:00:0.000Z",
         "node_name": "GRIIDC",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GRIIDC.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GRIIDC.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.23688673973083496,
+        "mn_count": 5794,
+        "mn_earliest": "2025-03-26T16:07:11+0000",
+        "mn_latest": "2026-05-21T15:10:21+0000",
+        "cn_count": 12168,
+        "cn_earliest": "2016-11-21T21:34:56+0000",
+        "cn_latest": "2026-05-21T15:10:21+0000",
+        "index_count": 12117,
+        "index_earliest": "2016-11-21T21:34:56.318Z",
+        "index_latest": "2026-05-13T15:10:20Z"
       }
     },
     {
@@ -874,7 +1193,18 @@
         "operational_status": "operational",
         "date_operational": "2017-01-18T00:00:0.000Z",
         "node_name": "Rolling Deck to Repository (R2R)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RD2R.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RD2R.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.3041203022003174,
+        "mn_count": 1826,
+        "mn_earliest": "2016-12-09T23:15:39+0000",
+        "mn_latest": "2017-01-26T02:21:39+0000",
+        "cn_count": 1787,
+        "cn_earliest": "2016-12-09T23:19:57+0000",
+        "cn_latest": "2017-01-26T02:21:39+0000",
+        "index_count": 1787,
+        "index_earliest": "2016-12-09T23:15:39.532Z",
+        "index_latest": "2017-01-26T02:21:39.358Z"
       }
     },
     {
@@ -895,7 +1225,18 @@
         "node_name": "Environmental Data Initiative",
         "operational_status": "operational",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EDI.png",
-        "date_operational": "2017-04-07T20:23:00.000Z"
+        "date_operational": "2017-04-07T20:23:00.000Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.5822460651397705,
+        "mn_count": 26622,
+        "mn_earliest": "2017-03-30T18:25:10+0000",
+        "mn_latest": "2026-05-27T15:30:07+0000",
+        "cn_count": 25810,
+        "cn_earliest": "2013-10-16T21:09:13+0000",
+        "cn_latest": "2026-05-27T15:30:07+0000",
+        "index_count": 22080,
+        "index_earliest": "2017-03-30T18:25:10.825Z",
+        "index_latest": "2026-05-27T15:30:07.351Z"
       }
     },
     {
@@ -937,7 +1278,18 @@
         "node_name": "Research Workspace",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/RW.png",
         "operational_status": "operational",
-        "date_operational": "2017-07-25T00:00:0.000Z"
+        "date_operational": "2017-07-25T00:00:0.000Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.3900597095489502,
+        "mn_count": 10590,
+        "mn_earliest": "2026-03-30T16:20:55+0000",
+        "mn_latest": "2026-04-29T23:31:37+0000",
+        "cn_count": 10570,
+        "cn_earliest": "2019-06-18T19:07:16+0000",
+        "cn_latest": "2026-04-29T23:31:37+0000",
+        "index_count": 10482,
+        "index_earliest": "2019-06-18T19:07:16.17Z",
+        "index_latest": "2026-04-29T23:31:37.248Z"
       }
     },
     {
@@ -958,7 +1310,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/FEMC_logo_fulltitle_right1.png",
         "date_operational": "2017-09-29T19:20:00",
         "operational_status": "operational",
-        "node_name": "Forest Ecosystem Monitoring Cooperative"
+        "node_name": "Forest Ecosystem Monitoring Cooperative",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 0.13535809516906738,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 11338,
+        "cn_earliest": "2017-10-20T15:03:15+0000",
+        "cn_latest": "2026-05-08T03:00:10+0000",
+        "index_count": 11016,
+        "index_earliest": "2017-10-18T03:00:02.519Z",
+        "index_latest": "2026-05-08T03:00:10.557Z"
       }
     },
     {
@@ -1000,7 +1363,18 @@
         "node_name": "PANGAEA Data Publisher for Earth and Environmental Science",
         "operational_status": "operational",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PANGAEA.png",
-        "date_operational": "2018-03-20T17:46:00.000Z"
+        "date_operational": "2018-03-20T17:46:00.000Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.24932336807250977,
+        "mn_count": 455080,
+        "mn_earliest": null,
+        "mn_latest": "2026-05-01T13:20:57+0000",
+        "cn_count": 902865,
+        "cn_earliest": "2018-05-12T03:01:38+0000",
+        "cn_latest": "2026-05-01T13:20:57+0000",
+        "index_count": 717198,
+        "index_earliest": "2018-01-05T18:25:02.685Z",
+        "index_latest": "2026-05-01T13:20:41Z"
       }
     },
     {
@@ -1021,7 +1395,18 @@
         "node_name": "ESS-DIVE",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ESS_DIVE1.png",
         "operational_status": "operational",
-        "date_operational": "2018-09-17T22:43:00"
+        "date_operational": "2018-09-17T22:43:00",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.6557424068450928,
+        "mn_count": 82355,
+        "mn_earliest": "2018-03-28T23:44:36+0000",
+        "mn_latest": "2026-05-28T10:53:34+0000",
+        "cn_count": 78851,
+        "cn_earliest": "2018-03-28T23:44:36+0000",
+        "cn_latest": "2026-05-28T10:53:34+0000",
+        "index_count": 31039,
+        "index_earliest": "2018-04-23T18:20:14.994Z",
+        "index_latest": "2026-05-27T00:05:58.513Z"
       }
     },
     {
@@ -1042,7 +1427,18 @@
         "operational_status": "operational",
         "date_operational": "2018-10-19T12:00:000.000Z",
         "node_name": "Chinese Ecosystem Research Network (CERN)",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/cern_logo.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/cern_logo.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 6.353367805480957,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 144,
+        "cn_earliest": "2018-09-10T08:25:43+0000",
+        "cn_latest": "2018-10-25T03:06:33+0000",
+        "index_count": 143,
+        "index_earliest": "2018-09-10T08:25:43.628Z",
+        "index_latest": "2018-10-25T03:06:33.839Z"
       }
     },
     {
@@ -1063,7 +1459,18 @@
         "node_name": "Cary Institute of Ecosystem Studies (powered by Figshare)",
         "operational_status": "operational",
         "date_operational": "2019-02-22T17:38:00.000Z",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/Cary_Institute.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/Cary_Institute.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.49048447608947754,
+        "mn_count": 109,
+        "mn_earliest": null,
+        "mn_latest": "2023-08-31T13:57:39+0000",
+        "cn_count": 109,
+        "cn_earliest": "2019-02-21T06:43:02+0000",
+        "cn_latest": "2023-08-31T13:57:39+0000",
+        "index_count": 109,
+        "index_earliest": "2019-02-21T06:43:02.713Z",
+        "index_latest": "2023-08-31T13:57:39.895Z"
       }
     },
     {
@@ -1084,7 +1491,18 @@
         "node_name": "EarthChem Library",
         "operational_status": "operational",
         "date_operational": "2019-03-04T23:50:00.000Z",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EARTHCHEM.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/EARTHCHEM.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.25826406478881836,
+        "mn_count": 1866,
+        "mn_earliest": "2026-05-26T21:25:33+0000",
+        "mn_latest": "2026-05-26T21:25:50+0000",
+        "cn_count": 2659,
+        "cn_earliest": "2019-03-04T19:13:59+0000",
+        "cn_latest": "2026-05-26T21:25:50+0000",
+        "index_count": 2196,
+        "index_earliest": "2019-03-04T19:13:59.478Z",
+        "index_latest": "2026-05-26T21:25:50Z"
       }
     },
     {
@@ -1105,7 +1523,18 @@
         "node_name": "US Antarctic Program Data Center",
         "operational_status": "operational",
         "date_operational": "2019-03-04T23:50:00.000Z",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_USAP.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_USAP.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.24306511878967285,
+        "mn_count": 1594,
+        "mn_earliest": "2026-05-27T14:10:11+0000",
+        "mn_latest": "2026-05-27T14:10:14+0000",
+        "cn_count": 2216,
+        "cn_earliest": "2019-03-04T21:55:55+0000",
+        "cn_latest": "2026-05-27T14:10:14+0000",
+        "index_count": 2185,
+        "index_earliest": "2019-03-04T21:55:55.738Z",
+        "index_latest": "2026-05-27T14:10:14Z"
       }
     },
     {
@@ -1126,7 +1555,18 @@
         "node_name": "Marine Geoscience Data System",
         "operational_status": "operational",
         "date_operational": "2019-03-04T23:50:00.000Z",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_MGDL.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/IEDA_MGDL.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2702665328979492,
+        "mn_count": 11049,
+        "mn_earliest": null,
+        "mn_latest": "2021-01-18T01:09:08+0000",
+        "cn_count": 9734,
+        "cn_earliest": "2019-03-04T21:38:55+0000",
+        "cn_latest": "2021-01-18T04:36:48+0000",
+        "index_count": 9728,
+        "index_earliest": "2019-03-04T19:24:17.965Z",
+        "index_latest": "2021-01-18T04:36:48.838Z"
       }
     },
     {
@@ -1147,7 +1587,18 @@
         "node_name": "GRIL: metaGRIL",
         "operational_status": "operational",
         "date_operational": "2019-09-13T21:00:00.000Z",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/METAGRIL.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/METAGRIL.png",
+        "mn_http_status": 0,
+        "mn_http_elapsed": 0.08199429512023926,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 285,
+        "cn_earliest": "2019-01-22T23:58:13+0000",
+        "cn_latest": "2021-07-11T19:23:25+0000",
+        "index_count": 274,
+        "index_earliest": "2019-01-23T16:27:45.263Z",
+        "index_latest": "2021-07-11T19:23:25.635Z"
       }
     },
     {
@@ -1168,7 +1619,18 @@
         "node_name": "ARM - Atmospheric Radiation Measurement Research Facility",
         "operational_status": "operational",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ARM.png",
-        "date_operational": "2020-09-10T12:01:01Z"
+        "date_operational": "2020-09-10T12:01:01Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.4349067211151123,
+        "mn_count": 19616,
+        "mn_earliest": null,
+        "mn_latest": "2021-01-10T05:02:15+0000",
+        "cn_count": 19313,
+        "cn_earliest": "2019-12-21T05:00:39+0000",
+        "cn_latest": "2021-11-14T05:05:57+0000",
+        "index_count": 19313,
+        "index_earliest": "2019-12-19T05:00:09.589Z",
+        "index_latest": "2021-11-14T05:05:57.181Z"
       }
     },
     {
@@ -1189,7 +1651,18 @@
         "operational_status": "operational",
         "node_name": "California Ocean Protection Council Data Repository",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CA_OPC.png",
-        "date_operational": "2020-08-11T00:20:06.000Z"
+        "date_operational": "2020-08-11T00:20:06.000Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.41042065620422363,
+        "mn_count": 7724,
+        "mn_earliest": "2020-04-20T22:45:32+0000",
+        "mn_latest": "2026-05-25T22:08:36+0000",
+        "cn_count": 7484,
+        "cn_earliest": "2017-07-20T22:57:07+0000",
+        "cn_latest": "2026-05-25T22:08:36+0000",
+        "index_count": 2802,
+        "index_earliest": "2020-05-07T21:51:58.048Z",
+        "index_latest": "2026-05-25T22:08:36.925Z"
       }
     },
     {
@@ -1210,7 +1683,18 @@
         "date_operational": "2021-12-15T00:00:0.000Z",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PNDB.png",
         "node_name": "PNDB Data Repository",
-        "operational_status": "operational"
+        "operational_status": "operational",
+        "mn_http_status": 522,
+        "mn_http_elapsed": 5.133389711380005,
+        "mn_count": null,
+        "mn_earliest": null,
+        "mn_latest": null,
+        "cn_count": 782,
+        "cn_earliest": "2020-06-26T00:44:59+0000",
+        "cn_latest": "2024-05-31T15:49:25+0000",
+        "index_count": 677,
+        "index_earliest": "2020-06-26T09:14:38.447Z",
+        "index_latest": "2024-05-31T15:49:25.919Z"
       }
     },
     {
@@ -1231,7 +1715,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/HYDROSHARE.png",
         "date_operational": "2021-07-18T16:10:26Z",
         "operational_status": "operational",
-        "node_name": "Hydroshare"
+        "node_name": "Hydroshare",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2359638214111328,
+        "mn_count": 25450,
+        "mn_earliest": "2026-05-16T09:12:06+0000",
+        "mn_latest": "2026-05-23T09:18:06+0000",
+        "cn_count": 24562,
+        "cn_earliest": "2021-07-17T18:08:12+0000",
+        "cn_latest": "2026-05-23T09:18:06+0000",
+        "index_count": 23665,
+        "index_earliest": "2021-07-17T18:08:12Z",
+        "index_latest": "2026-05-23T09:18:06Z"
       }
     },
     {
@@ -1252,7 +1747,18 @@
         "node_name": "Netherlands Polar Data Center (NPDC)",
         "operational_status": "operational",
         "date_operational": "2021-09-10T20:19:42.0Z",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NPDC.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NPDC.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.4001328945159912,
+        "mn_count": 104,
+        "mn_earliest": null,
+        "mn_latest": "2025-04-18T08:10:13+0000",
+        "cn_count": 104,
+        "cn_earliest": "2021-09-11T12:16:31+0000",
+        "cn_latest": "2025-04-18T08:10:13+0000",
+        "index_count": 54,
+        "index_earliest": "2021-09-11T12:16:31Z",
+        "index_latest": "2025-04-18T08:10:13Z"
       }
     },
     {
@@ -1273,7 +1779,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/CERP_SFWMD.png",
         "node_name": "CERP - South Florida Water Management District",
         "date_operational": "2022-07-14T00:00:0.000Z",
-        "operational_status": "operational"
+        "operational_status": "operational",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.4429895877838135,
+        "mn_count": 5260,
+        "mn_earliest": null,
+        "mn_latest": "2026-05-18T16:42:34+0000",
+        "cn_count": 5151,
+        "cn_earliest": "2013-05-20T13:25:08+0000",
+        "cn_latest": "2026-05-18T16:42:34+0000",
+        "index_count": 4751,
+        "index_earliest": "2013-05-20T13:25:08.753Z",
+        "index_latest": "2026-05-18T16:42:33.632Z"
       }
     },
     {
@@ -1294,7 +1811,18 @@
         "operational_status": "operational",
         "date_operational": "2023-08-25T21:14:06+00:00",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DRP.png",
-        "node_name": "Defense Resiliency Platform Against Extreme Cold Weather"
+        "node_name": "Defense Resiliency Platform Against Extreme Cold Weather",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.31266260147094727,
+        "mn_count": 79126,
+        "mn_earliest": null,
+        "mn_latest": "2026-01-02T18:22:12+0000",
+        "cn_count": 78078,
+        "cn_earliest": "2022-08-02T20:48:33+0000",
+        "cn_latest": "2025-12-30T21:23:19+0000",
+        "index_count": 5827,
+        "index_earliest": "2022-08-02T21:48:19.327Z",
+        "index_latest": "2025-12-30T21:23:19.023Z"
       }
     },
     {
@@ -1315,7 +1843,18 @@
         "date_operational": "2022-08-08T00:00:0.000Z",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/originals/HAKAI_IYS.png",
         "node_name": "International Year of the Salmon Catalogue",
-        "operational_status": "operational"
+        "operational_status": "operational",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.4176769256591797,
+        "mn_count": 167619,
+        "mn_earliest": null,
+        "mn_latest": "2023-10-31T18:19:44+0000",
+        "cn_count": 156375,
+        "cn_earliest": "2022-08-08T18:19:13+0000",
+        "cn_latest": "2023-10-31T18:19:44+0000",
+        "index_count": 107437,
+        "index_earliest": "2022-08-08T18:19:13Z",
+        "index_latest": "2023-10-31T18:19:44Z"
       }
     },
     {
@@ -1336,7 +1875,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SCTLD.png",
         "node_name": "Stony Coral Tissue Loss Disease (SCTLD) Research Data Portal",
         "operational_status": "operational",
-        "date_operational": "2023-01-27T00:00:00"
+        "date_operational": "2023-01-27T00:00:00",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.22979164123535156,
+        "mn_count": 2974,
+        "mn_earliest": "2023-01-30T18:28:37+0000",
+        "mn_latest": "2026-04-22T19:24:14+0000",
+        "cn_count": 2822,
+        "cn_earliest": "2023-01-30T18:28:37+0000",
+        "cn_latest": "2026-04-22T19:24:14+0000",
+        "index_count": 127,
+        "index_earliest": "2023-04-13T18:08:56.339Z",
+        "index_latest": "2026-04-22T19:24:14.704Z"
       }
     },
     {
@@ -1357,7 +1907,18 @@
         "operational_status": "operational",
         "date_operational": "2023-08-25T21:14:41+00:00",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CERP_SFWMD.png",
-        "node_name": "South Florida Water Management District (SFWMD)"
+        "node_name": "South Florida Water Management District (SFWMD)",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.4327571392059326,
+        "mn_count": 8390,
+        "mn_earliest": null,
+        "mn_latest": "2026-05-13T18:51:45+0000",
+        "cn_count": 8220,
+        "cn_earliest": "2012-12-03T09:27:10+0000",
+        "cn_latest": "2026-05-13T18:51:45+0000",
+        "index_count": 596,
+        "index_earliest": "2023-12-01T20:46:31.51Z",
+        "index_latest": "2026-05-11T13:03:14.004Z"
       }
     },
     {
@@ -1377,7 +1938,18 @@
         "description": "The Canadian Watershed Information Network (CanWIN) is a Canadian spatial data research infrastructure (SDRI) system hosted at the University of Manitoba and managed by the Centre for Earth Observation Science within the Clayton H. Riddell Faculty of Environment, Earth and Resources. We support research and education, and inform management, policy and evidence based decision making within the Nelson River Watershed and into the Arctic via Hudson Bay. By creating an interoperable infrastructure, CanWIN facilitates the discoverability and accessibility of water and climate related data across the freshwater-marine spectrum.",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CANWIN.png",
         "node_name": "Canadian Watershed Information Network (CanWIN)",
-        "operational_status": "upcoming"
+        "operational_status": "upcoming",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.23980307579040527,
+        "mn_count": 42653,
+        "mn_earliest": "2023-10-10T20:59:17+0000",
+        "mn_latest": "2026-02-05T05:10:14+0000",
+        "cn_count": 39974,
+        "cn_earliest": "2023-10-10T02:00:06+0000",
+        "cn_latest": "2026-02-05T05:10:14+0000",
+        "index_count": 13225,
+        "index_earliest": "2023-09-11T21:42:32Z",
+        "index_latest": "2026-02-05T05:10:14Z"
       }
     },
     {
@@ -1398,7 +1970,18 @@
         "operational_status": "operational",
         "node_name": "OpenTopography",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OPENTOPO.png",
-        "date_operational": "2023-10-12T12:00:00Z"
+        "date_operational": "2023-10-12T12:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2255871295928955,
+        "mn_count": 26190,
+        "mn_earliest": "2023-10-29T00:19:07+0000",
+        "mn_latest": "2026-05-28T06:11:21+0000",
+        "cn_count": 25009,
+        "cn_earliest": "2023-10-28T00:15:22+0000",
+        "cn_latest": "2026-05-28T06:11:21+0000",
+        "index_count": 23828,
+        "index_earliest": "2023-10-03T03:49:45Z",
+        "index_latest": "2026-05-27T06:11:35Z"
       }
     },
     {
@@ -1419,7 +2002,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BOREALIS.png",
         "operational_status": "operational",
         "node_name": "Borealis",
-        "date_operational": "2024-01-24T18:30:00Z"
+        "date_operational": "2024-01-24T18:30:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.23701763153076172,
+        "mn_count": 25321,
+        "mn_earliest": null,
+        "mn_latest": "2025-11-26T05:42:18+0000",
+        "cn_count": 24639,
+        "cn_earliest": "2024-03-28T16:44:13+0000",
+        "cn_latest": "2025-11-26T05:42:18+0000",
+        "index_count": 24321,
+        "index_earliest": "2023-11-06T20:04:56Z",
+        "index_latest": "2025-11-26T05:42:18Z"
       }
     },
     {
@@ -1440,7 +2034,18 @@
         "node_name": "Harvard Dataverse",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/HD.png",
         "operational_status": "operational",
-        "date_operational": "2023-12-10T00:00:00Z"
+        "date_operational": "2023-12-10T00:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.28893303871154785,
+        "mn_count": 119046,
+        "mn_earliest": "2025-01-18T02:32:38+0000",
+        "mn_latest": "2026-05-28T05:54:19+0000",
+        "cn_count": 114606,
+        "cn_earliest": "2024-03-06T07:01:14+0000",
+        "cn_latest": "2026-05-28T05:54:19+0000",
+        "index_count": 94099,
+        "index_earliest": "2023-11-08T01:59:40Z",
+        "index_latest": "2026-05-27T05:32:59Z"
       }
     },
     {
@@ -1461,7 +2066,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NSIDC.png",
         "node_name": "National Snow and Ice Data Center (NSIDC)",
         "operational_status": "operational",
-        "date_operational": "2023-12-04T00:00:00Z"
+        "date_operational": "2023-12-04T00:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2724013328552246,
+        "mn_count": 6715,
+        "mn_earliest": "2023-12-02T01:59:21+0000",
+        "mn_latest": "2026-05-24T01:51:13+0000",
+        "cn_count": 5946,
+        "cn_earliest": "2023-11-28T23:21:47+0000",
+        "cn_latest": "2026-05-24T01:51:11+0000",
+        "index_count": 5699,
+        "index_earliest": "2023-11-28T23:21:47Z",
+        "index_latest": "2026-05-24T01:51:11Z"
       }
     },
     {
@@ -1482,7 +2098,18 @@
         "operational_status": "operational",
         "node_name": "DataverseNO",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/DVNO.png",
-        "date_operational": "2024-07-29T16:00:00Z"
+        "date_operational": "2024-07-29T16:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.39881229400634766,
+        "mn_count": 3343,
+        "mn_earliest": "2025-01-07T13:13:28+0000",
+        "mn_latest": "2026-05-27T13:22:12+0000",
+        "cn_count": 3009,
+        "cn_earliest": "2024-01-05T15:59:27+0000",
+        "cn_latest": "2026-05-27T13:22:12+0000",
+        "index_count": 2885,
+        "index_earliest": "2024-01-05T15:59:27Z",
+        "index_latest": "2026-05-27T13:22:12Z"
       }
     },
     {
@@ -1503,7 +2130,18 @@
         "date_operational": "2024-04-25T21:14:41+00:00",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SI.png",
         "node_name": "Smithsonian Research Data Repository",
-        "operational_status": "operational"
+        "operational_status": "operational",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.7319717407226562,
+        "mn_count": 18110,
+        "mn_earliest": "2024-04-26T15:09:21+0000",
+        "mn_latest": "2026-05-21T15:24:28+0000",
+        "cn_count": 17858,
+        "cn_earliest": "2024-04-26T15:09:21+0000",
+        "cn_latest": "2026-05-21T15:24:28+0000",
+        "index_count": 6858,
+        "index_earliest": "2024-07-31T10:49:52.944Z",
+        "index_latest": "2026-05-21T12:54:38.964Z"
       }
     },
     {
@@ -1524,7 +2162,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GEM.png",
         "node_name": "Greenland Ecosystem Monitoring",
         "operational_status": "operational",
-        "date_operational": "2024-05-07T21:00:00Z"
+        "date_operational": "2024-05-07T21:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2617301940917969,
+        "mn_count": 34388,
+        "mn_earliest": "2025-09-16T11:40:54+0000",
+        "mn_latest": "2026-05-22T11:41:29+0000",
+        "cn_count": 33125,
+        "cn_earliest": "2024-08-19T11:56:13+0000",
+        "cn_latest": "2026-05-22T11:41:29+0000",
+        "index_count": 32504,
+        "index_earliest": "2024-06-04T12:55:23Z",
+        "index_latest": "2026-05-22T11:41:29Z"
       }
     },
     {
@@ -1545,7 +2194,18 @@
         "node_name": "California Institute for Biodiversity",
         "operational_status": "operational",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/CIB.png",
-        "date_operational": "2025-03-27T22:00:00Z"
+        "date_operational": "2025-03-27T22:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2536647319793701,
+        "mn_count": 654,
+        "mn_earliest": "2026-05-18T18:27:43+0000",
+        "mn_latest": "2026-05-21T18:21:30+0000",
+        "cn_count": 370,
+        "cn_earliest": "2024-12-13T20:05:12+0000",
+        "cn_latest": "2026-05-18T21:06:36+0000",
+        "index_count": 344,
+        "index_earliest": "2024-12-13T20:05:12.781Z",
+        "index_latest": "2026-04-09T19:45:25.676Z"
       }
     },
     {
@@ -1566,7 +2226,18 @@
         "node_name": "ISRIC \u2013 World Soil Information",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/ISRIC.png",
         "operational_status": "operational",
-        "date_operational": "2025-02-07T22:00:00Z"
+        "date_operational": "2025-02-07T22:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.40533447265625,
+        "mn_count": 299,
+        "mn_earliest": null,
+        "mn_latest": "2025-11-28T16:10:20+0000",
+        "cn_count": 293,
+        "cn_earliest": "2025-02-05T14:10:06+0000",
+        "cn_latest": "2025-11-28T16:10:20+0000",
+        "index_count": 291,
+        "index_earliest": "2025-02-05T14:10:06Z",
+        "index_latest": "2025-11-28T16:10:20Z"
       }
     },
     {
@@ -1587,7 +2258,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SNAP.png",
         "date_operational": "2025-04-15T17:00:00Z",
         "operational_status": "operational",
-        "node_name": "Scenarios Network for Alaska + Arctic Planning (SNAP)"
+        "node_name": "Scenarios Network for Alaska + Arctic Planning (SNAP)",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.24892807006835938,
+        "mn_count": 73,
+        "mn_earliest": null,
+        "mn_latest": "2025-11-25T15:12:38+0000",
+        "cn_count": 72,
+        "cn_earliest": "2025-03-14T22:34:02+0000",
+        "cn_latest": "2025-11-25T15:12:38+0000",
+        "index_count": 63,
+        "index_earliest": "2025-03-14T22:34:02Z",
+        "index_latest": "2025-11-25T15:12:38Z"
       }
     },
     {
@@ -1607,7 +2289,18 @@
         "description": "The BonaRes Repository provides soil, agriculture and ecology research data. Agricultural and soil research (meta)data following the most important community standards, are quality assured, are open and mostly have geospatial information, are visible and findable by map services, and metadata are harvestable.",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/BONARES.png",
         "operational_status": "upcoming",
-        "node_name": "BonaRes Repository"
+        "node_name": "BonaRes Repository",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.24383926391601562,
+        "mn_count": 1409,
+        "mn_earliest": "2026-01-22T16:45:35+0000",
+        "mn_latest": "2026-05-26T21:25:35+0000",
+        "cn_count": 1377,
+        "cn_earliest": "2025-03-21T12:04:16+0000",
+        "cn_latest": "2026-05-26T21:25:35+0000",
+        "index_count": 1264,
+        "index_earliest": "2025-03-21T11:57:17Z",
+        "index_latest": "2026-05-26T21:25:35Z"
       }
     },
     {
@@ -1628,7 +2321,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OBIS_SEAMAP.png",
         "node_name": "OBIS-SEAMAP",
         "operational_status": "operational",
-        "date_operational": "2025-08-28T12:00:00Z"
+        "date_operational": "2025-08-28T12:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.25585508346557617,
+        "mn_count": 2467,
+        "mn_earliest": null,
+        "mn_latest": "2026-03-27T22:19:59+0000",
+        "cn_count": 2431,
+        "cn_earliest": "2025-04-18T16:06:00+0000",
+        "cn_latest": "2026-03-27T22:19:59+0000",
+        "index_count": 1699,
+        "index_earliest": "2025-08-27T14:45:33Z",
+        "index_latest": "2026-03-27T22:19:59Z"
       }
     },
     {
@@ -1649,7 +2353,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/GEUS.png",
         "node_name": "GEUS Dataverse",
         "operational_status": "operational",
-        "date_operational": "2025-06-10T12:00:00Z"
+        "date_operational": "2025-06-10T12:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.227616548538208,
+        "mn_count": 803,
+        "mn_earliest": "2026-05-26T21:26:03+0000",
+        "mn_latest": "2026-05-26T21:38:07+0000",
+        "cn_count": 794,
+        "cn_earliest": "2025-06-02T16:32:58+0000",
+        "cn_latest": "2026-05-26T21:38:07+0000",
+        "index_count": 782,
+        "index_earliest": "2025-06-02T16:32:58Z",
+        "index_latest": "2026-05-26T21:38:07Z"
       }
     },
     {
@@ -1670,7 +2385,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/FWC.png",
         "operational_status": "operational",
         "node_name": "Florida Fish and Wildlife Conservation Commission",
-        "date_operational": "2025-08-20T12:00:00Z"
+        "date_operational": "2025-08-20T12:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.3803117275238037,
+        "mn_count": 4127,
+        "mn_earliest": null,
+        "mn_latest": "2026-05-18T17:04:21+0000",
+        "cn_count": 4109,
+        "cn_earliest": "2025-10-06T21:11:16+0000",
+        "cn_latest": "2026-05-18T17:04:21+0000",
+        "index_count": 114,
+        "index_earliest": "2025-10-06T19:57:26.685Z",
+        "index_latest": "2026-05-14T21:32:17.199Z"
       }
     },
     {
@@ -1691,7 +2417,18 @@
         "date_operational": "2025-09-12T19:30:00Z",
         "operational_status": "operational",
         "node_name": "Seafloor Data Repository",
-        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SDR.png"
+        "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/SDR.png",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.3265821933746338,
+        "mn_count": 287,
+        "mn_earliest": null,
+        "mn_latest": "2026-05-01T19:50:28+0000",
+        "cn_count": 140,
+        "cn_earliest": "2025-08-26T15:33:11+0000",
+        "cn_latest": "2025-10-15T18:38:04+0000",
+        "index_count": 35,
+        "index_earliest": "2025-08-29T16:54:38.701Z",
+        "index_latest": "2025-10-15T18:38:04.669Z"
       }
     },
     {
@@ -1712,7 +2449,18 @@
         "node_name": "Ocean Biodiversity Information System (OBIS)",
         "operational_status": "operational",
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/OBIS.png",
-        "date_operational": "2025-09-15T19:00:00Z"
+        "date_operational": "2025-09-15T19:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.23743462562561035,
+        "mn_count": 5310,
+        "mn_earliest": "2025-10-27T15:27:41+0000",
+        "mn_latest": "2026-03-27T22:19:38+0000",
+        "cn_count": 5180,
+        "cn_earliest": "2025-09-16T01:54:40+0000",
+        "cn_latest": "2026-03-27T22:19:38+0000",
+        "index_count": 5138,
+        "index_earliest": "2025-09-15T23:46:01Z",
+        "index_latest": "2026-03-27T22:19:38Z"
       }
     },
     {
@@ -1733,7 +2481,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/NORDICANA_D.png",
         "operational_status": "operational",
         "node_name": "Nordicana D",
-        "date_operational": "2025-09-16T20:00:00Z"
+        "date_operational": "2025-09-16T20:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.2286546230316162,
+        "mn_count": 140,
+        "mn_earliest": null,
+        "mn_latest": "2026-03-17T21:50:56+0000",
+        "cn_count": 140,
+        "cn_earliest": "2025-09-16T19:26:58+0000",
+        "cn_latest": "2026-03-17T21:50:56+0000",
+        "index_count": 139,
+        "index_earliest": "2025-09-16T19:26:58Z",
+        "index_latest": "2026-03-17T21:50:56Z"
       }
     },
     {
@@ -1754,7 +2513,18 @@
         "logo_url": "https://raw.githubusercontent.com/DataONEorg/member-node-info/master/production/graphics/web/PDC.png",
         "operational_status": "operational",
         "node_name": "Polar Data Catalogue",
-        "date_operational": "2026-04-17T20:00:00Z"
+        "date_operational": "2026-04-17T20:00:00Z",
+        "mn_http_status": 200,
+        "mn_http_elapsed": 0.423295259475708,
+        "mn_count": 3044,
+        "mn_earliest": null,
+        "mn_latest": "2026-03-27T20:19:45+0000",
+        "cn_count": 2944,
+        "cn_earliest": "2026-03-27T20:15:21+0000",
+        "cn_latest": "2026-03-27T20:19:45+0000",
+        "index_count": 2922,
+        "index_earliest": "2026-03-27T20:06:18Z",
+        "index_latest": "2026-03-27T20:19:45Z"
       }
     }
   ]
