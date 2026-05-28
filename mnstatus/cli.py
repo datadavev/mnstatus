@@ -4,6 +4,7 @@ import logging
 import logging.handlers
 import os
 import sys
+import typing
 
 import click
 import geojson
@@ -39,6 +40,15 @@ def stateInt(state):
     if state.lower() == "up":
         return 1
     return 0
+
+
+def find_entry_by_nodeid(
+    nodeid: str, data: list[dict[typing.Any, typing.Any]]
+) -> dict[typing.Any, typing.Any] | None:
+    for record in data:
+        if record.get("identifier") == nodeid:
+            return record
+    return None
 
 
 @click.group()
@@ -221,8 +231,13 @@ def checkNode(ctx, node_id, timeout, tests):
 @click.option(
     "-s", "--state", "n_state", default=None, help="Specify node state, up or down"
 )
+@click.option(
+    "-i", "--status_info", default=None, help="Path to JSON report data to include"
+)
 @click.pass_context
-def generate_geojson(ctx, n_type: str | None, n_state: str | None):
+def generate_geojson(
+    ctx, n_type: str | None, n_state: str | None, status_info: str | None
+):
     _L = mnstatus.getLogger()
     if n_type is not None:
         n_type = n_type.lower()
@@ -234,6 +249,11 @@ def generate_geojson(ctx, n_type: str | None, n_state: str | None):
     if n_state not in [None, "up", "down"]:
         _L.error("Expecting node state to be 'up' or 'down'")
         return 1
+    status_data = None
+    if status_info is not None:
+        with open(status_info, "r") as fsrc:
+            status_data = json.load(fsrc)
+
     cn = mnstatus.NodeList(base_url=ctx.obj["cnode_url"])
     cn.filterNodeState(n_state)
     cn.filterNodeType(n_type)
@@ -241,10 +261,42 @@ def generate_geojson(ctx, n_type: str | None, n_state: str | None):
     features = []
     for k, v in data.items():
         if len(v["location"]) == 2:
+            _properties = v["properties"]
+            if status_data is not None:
+                _metrics = find_entry_by_nodeid(k, status_data)
+                if _metrics is not None:
+                    stats = _metrics.get("status", {})
+                    _properties["mn_http_status"] = stats.get("mn", {}).get(
+                        "status", -999
+                    )
+                    _properties["mn_http_elapsed"] = stats.get("ping", {}).get(
+                        "elapsed", -999
+                    )
+                    _properties["mn_count"] = stats.get("mn", {}).get("count", 0)
+                    _properties["mn_earliest"] = stats.get("mn", {}).get(
+                        "earliest", "1900-01-01T00:00:00.000+00:00"
+                    )
+                    _properties["mn_latest"] = stats.get("mn", {}).get(
+                        "latest", "1900-01-01T00:00:00.000+00:00"
+                    )
+                    _properties["cn_count"] = stats.get("cn", {}).get("count", 0)
+                    _properties["cn_earliest"] = stats.get("cn", {}).get(
+                        "earliest", "1900-01-01T00:00:00.000+00:00"
+                    )
+                    _properties["cn_latest"] = stats.get("cn", {}).get(
+                        "latest", "1900-01-01T00:00:00.000+00:00"
+                    )
+                    _properties["index_count"] = stats.get("index", {}).get("count", 0)
+                    _properties["index_earliest"] = stats.get("index", {}).get(
+                        "earliest", "1900-01-01T00:00:00.000+00:00"
+                    )
+                    _properties["index_latest"] = stats.get("index", {}).get(
+                        "latest", "1900-01-01T00:00:00.000+00:00"
+                    )
             feature = geojson.Feature(
                 id=k,
                 geometry=geojson.Point(v["location"]),
-                properties=v["properties"],
+                properties=_properties,
             )
             features.append(feature)
     feature_collection = geojson.FeatureCollection(features)
